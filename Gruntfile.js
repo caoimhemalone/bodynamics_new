@@ -14,10 +14,10 @@ module.exports = function(grunt) {
         files: 'scripts/*.coffee',
         tasks: ['coffee']
       },
-      concat: {
-        files: ['scripts/hello.js','scripts/main.js'],
-        tasks: ['concat']
-      },
+      // concat: {
+      //   files: ['scripts/hello.js','scripts/main.js'],
+      //   tasks: ['concat']
+      // },
       uglify: {
         files: 'scripts/built.js',
         tasks: ['uglify'],
@@ -33,20 +33,20 @@ module.exports = function(grunt) {
       }
     },
 
-    concat: {
-      options: {
-        separator: '\n/*next file*/\n\n'
-      },
-      dist: {
-        src: ['scripts/hello.js', 'scripts/main.js'],
-        dest: 'scripts/built.js'
-      }
-    },
+    // concat: {
+    //   options: {
+    //     separator: '\n/*next file*/\n\n'
+    //   },
+    //   dist: {
+    //     src: ['scripts/main.js'],
+    //     dest: 'scripts/built.js'
+    //   }
+    // },
 
     uglify: {
       build: {
         files: {
-          'scripts/built.min.js': ['scripts/built.js']
+          'scripts/built.min.js': ['scripts/main.js']
         }
       }
     },
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
     coffee: {
       compile: {
        files: {
-         'scripts/hello.js': 'scripts/hello.coffee'
+         'scripts/main.js': 'scripts/main.coffee'
        }
      }
    },
@@ -83,7 +83,9 @@ module.exports = function(grunt) {
   // Default task
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('css', ['sass', 'cssmin']);
-  grunt.registerTask('js', ['coffee', 'concat', 'uglify']);
+    grunt.registerTask('js', ['coffee','uglify']);
+
+  // grunt.registerTask('js', ['coffee', 'concat', 'uglify']);
 
   // Load up tasks
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -91,6 +93,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  // grunt.loadNpmTasks('grunt-contrib-concat');
 
 };
