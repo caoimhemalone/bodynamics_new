@@ -10,17 +10,33 @@
 		<meta name="title" content="Bodynamics">
 		<meta name="author" content="Caoimhe Malone">
 
-		<!-- Bootstrap CSS 
-		<link href="Bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
-		
 		<!-- Custom CSS -->
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<!-- Bootstrap CSS -->
+		<link href="Bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+		
+		
 	</head>
 
 	<body>
+
+		<!-- social bar 
+			Not sure if gonna put this in
+		<div class="social-bar col-md-12">
+			<div class="col-md-4">
+				<div>Twitter</div>
+				<div>Facebook</div>
+				<div>Email</div>
+			</div>
+			<div class="col-md-6"></div>
+			<div class="col-md-2">
+				<div>Phone</div>
+				<div>018888888</div>
+			</div>
+		</div>-->
 		<!-- Nav Bar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-			<div class="container">
+			<div class="container ">
 				<a class="navbar-brand" href="#">Bodynamics</a>
 		        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 		          <span class="navbar-toggler-icon"></span>
@@ -33,19 +49,19 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Pricing</a>
+							<a href="#memberships" class="nav-link">Pricing</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Team</a>
+							<a href="#team" class="nav-link">Team</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Timetable</a>
+							<a href="#timetable" class="nav-link">Timetable</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">About Us</a>
+							<a href="#about" class="nav-link">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Blog</a>
+							<a href="#blog" class="nav-link">Blog</a>
 						</li>
 					</ul>
 				</div>
@@ -53,6 +69,7 @@
 		</nav>
 
 		<header>
+			
 			<div id="carouselIndicators" class="carousel slide" data-rode="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="carouselIndicators" data-slide-to="0" class="active"></li>
@@ -90,7 +107,257 @@
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
 				</a>	
-			</div>	
+			</div>
+
+			<div class="container">
+
+
+				<div class="memberships row" id="memberships">
+					<h3>Memberships</h3>
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="membership-option">
+									<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p> €00 </p>
+
+								</div>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="membership-option">
+									<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p> €00 </p>
+									
+								</div>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="membership-option">
+									<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p> €00 </p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="team row" id="team">
+					<h3>Our Team</h3>
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="team-member">
+									<div class="rounded-circle"></div>
+									<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+								</div>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="team-member">
+									<div class="rounded-circle"></div>
+									<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+								</div>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="team-member">
+									<div class="rounded-circle"></div>
+									<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="Timetable row" id="timetable">
+					<h3>Timetable</h3>
+					<table class="col-md-12" border=3 cellspacing =3 cellpadding =3> 
+						<tr>
+							<td colspan="7" align=center>
+								<b>November 2018</b>
+							</td> 
+						</tr>
+						<tr> 
+							<td align=center>Mon</td>
+							<td align=center>Tues</td>
+							<td align=center>Wed</td>
+							<td align=center>Thurs</td>
+							<td align=center>Fri</td>
+							<td align=center>Sat</td>
+							<td align=center>Sun</td>
+						</tr>
+						<tr> 
+							<td align=center></td>
+							<td align=center></td>
+							<td align=center></td>
+							<td align=center>1</td>
+							<td align=center>2</td>
+							<td align=center>3</td>
+							<td align=center>4</td>
+						</tr>
+						<tr> 
+							<td align=center>5</td>
+							<td align=center>6</td>
+							<td align=center>7</td>
+							<td align=center>8</td>
+							<td align=center>9</td>
+							<td align=center>10</td>
+							<td align=center>11</td>
+						</tr>
+						<tr> 
+							<td align=center>12</td>
+							<td align=center>13</td>
+							<td align=center>14</td>
+							<td align=center>15</td>
+							<td align=center>16</td>
+							<td align=center>17</td>
+							<td align=center>18</td>
+						</tr>
+						<tr> 
+							<td align=center>19</td>
+							<td align=center>20</td>
+							<td align=center>21</td>
+							<td align=center>22</td>
+							<td align=center>23</td>
+							<td align=center>24</td>
+							<td align=center>25</td>
+						</tr>
+						<tr> 
+							<td align=center>26</td>
+							<td align=center>27</td>
+							<td align=center>28</td>
+							<td align=center>29</td>
+							<td align=center>30</td>
+							<td align=center>Dec 1</td>
+							<td align=center>2</td>
+						</tr>
+						</table>
+
+				</div>
+
+				<div class="about" id="about">
+					<h3>About Us</h3>
+					<div class="about-info">
+					
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="contact-info">
+						<h5>Contact Information</h5>
+						<div class="row">
+							<div class="col-md-5 contact-listing">
+								<h6> Open Hours </h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<h6> Address </h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<h6> Email </h6>
+								<p>Lorem ipsum dolor sit amet, consectetur </p>
+								<h6> Phone Number </h6>
+								<p>018888888</p>
+
+							</div>
+							<div class="col-md-7 contact-form">
+								<form action="/action_page.php">
+									  Your email:<br>
+									  <input type="text" name="email" hint="email">
+									  <br>
+									  Subject:<br>
+									  <input type="text" name="subject" hint="Subject">
+									  <br>
+									  Message:<br>
+									  <input type="text" name="message" hint="Message">
+									  <br><br>
+									  <input class="submit" type="submit" hint="Submit">
+								</form> 
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+
+				<div class="blog" id="blog">
+					<h3>Blog</h3>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="blog-image">
+								
+							</div>
+							<div class="blog-heading">
+								<h5>Heading</h5>
+							</div>
+							<div class="blog-preview">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+								
+							</div>
+							
+						</div>
+						<div class="col-md-4">
+							<div class="blog-image">
+								
+							</div>
+							<div class="blog-heading">
+								<h5>Heading</h5>
+							</div>
+							<div class="blog-preview">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+								
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="blog-image">
+								
+							</div>
+							<div class="blog-heading">
+								<h5>Heading</h5>
+							</div>
+							<div class="blog-preview">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="blog-image">
+								
+							</div>
+							<div class="blog-heading">
+								<h5>Heading</h5>
+							</div>
+							<div class="blog-preview">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+								
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="blog-image">
+								
+							</div>
+							<div class="blog-heading">
+								<h5>Heading</h5>
+							</div>
+							<div class="blog-preview">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+								
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="blog-image">
+								
+							</div>
+							<div class="blog-heading">
+								<h5>Heading</h5>
+							</div>
+							<div class="blog-preview">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 		<!-- Footer -->
 	    <footer class="py-5 bg-dark">
