@@ -51,13 +51,13 @@ module.exports = function(grunt) {
       }
     },
 
-    coffee: {
-      compile: {
-       files: {
-         'scripts/main.js': 'scripts/main.coffee'
-       }
-     }
-   },
+   //  coffee: {
+   //    compile: {
+   //     files: {
+   //       'scripts/main.js': 'scripts/main.coffee'
+   //     }
+   //   }
+   // },
 
    cssmin: {
     build: {
@@ -83,7 +83,7 @@ module.exports = function(grunt) {
   // Default task
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('css', ['sass', 'cssmin']);
-    grunt.registerTask('js', ['coffee','uglify']);
+    grunt.registerTask('js', ['uglify']);
 
   // grunt.registerTask('js', ['coffee', 'concat', 'uglify']);
 
