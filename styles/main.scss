@@ -50,8 +50,12 @@ $green: #a9e20e;
 
 .blog-image {
     border: 5px solid black;
-    padding: 25px;
+    //padding: 25px;
     margin: 25px;
+
+    img {
+    	width: 100%;
+    }
 }
 
 .carousel-item {
@@ -207,3 +211,23 @@ h3 {
   transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
 }
 
+/*Use this class when you want your content to be hidden*/
+.beforeScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  .
+  .
+  display: none;
+}
+
+
+/*Use this class when you want your content to be shown after some scroll*/
+.afterScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  .
+  .
+  display: block;
+}
