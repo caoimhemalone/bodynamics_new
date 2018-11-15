@@ -7,6 +7,13 @@ $green: #a9e20e;
 	padding: 0;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
 .membership-option {
 	padding: 2em;
 	border: 2px black;
@@ -30,6 +37,21 @@ $green: #a9e20e;
 	padding: 3em;
 }
 
+.schedule {
+  width: 50%;
+  height: 400%;
+  margin-left: 20%;
+}
+
+iframe {
+  #top-bar {
+    display: none !important;
+  }
+}
+
+.about {
+  margin-top: 55%;
+}
 .contact-info {
 	padding-top: 2em;
 }
@@ -211,19 +233,413 @@ h3 {
   transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
 }
 
-/*Use this class when you want your content to be hidden*/
-.beforeScroll
+// For scroll reveal 
+.reveal
 {
-  height: 100px; /*Whatever you want*/
-  width: 100%; /*Whatever you want*/
-  display: none;
+    opacity:0;
+}
+
+//Scroll to top
+.scrollToTop {
+  button {
+    background-color: $green;
+    position: fixed;
+    float:right;
+    right: 2%;
+    background-image: url(../images/scroll.png); 
+    bottom: 1%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    color: #000;
+    text-decoration: none;
+    border-style: none;
+  }
+
+    button:focus {
+      outline: 1px  $green;
+    }
+  
+
+  a {
+    color: #000;
+  }
+  a:hover {
+    color: #000;
+    text-decoration: none;
+  }
 }
 
 
-/*Use this class when you want your content to be shown after some scroll*/
-.afterScroll
-{
-  height: 100px; /*Whatever you want*/
-  width: 100%; /*Whatever you want*/
-  display: block;
+//Bootstrap overrides
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
 }
+
+.container {
+  h3 {
+    font-family: AvenirNextRegular,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 10;
+    letter-spacing: 1px;
+  }
+}
+
+
+//Media Queries 
+
+
+@media (min width: 569px) {
+  .scrollToTop {
+    button {
+      bottom: 4%;
+      right: 3%;
+      padding-right: 3.2%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .scrollToTop {
+    button {
+      bottom: 4%;
+      right: 3%;
+      padding-right: 1.5%;
+    }
+  }
+
+}
+
+ /* ----------- Tablets ----------- */
+
+@media (max-width: 1000px) {
+  .schedule {
+  height: 300%;
+  width: 80%;
+}
+
+.about {
+  padding-top: 20%;
+}
+}
+
+@media  (min-width: 992px) {
+  .scrollToTop {
+    button {
+      bottom: 3%;
+      right: 3%;
+      padding-right: 1.2%;
+    }
+  }
+}
+
+ /* ----------- Laptop ----------- */
+
+@media  (min-width: 1200px) {
+
+  }
+
+
+  /* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  .scrollToTop {
+    button {
+      bottom: 5%;
+      right: 5%;
+      padding-right: 3.75%;
+    }
+  }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+  .scrollToTop {
+    button {
+      bottom: 4%;
+      right: 5%;
+      padding-right: 3.3%;
+    }
+  }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+  .scrollToTop {
+    button {
+      padding-right: 3%;
+    }
+  }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+  .scrollToTop {
+    button {
+      bottom: 4%;
+      padding-right: 3.2%;
+    }
+  }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- Galaxy S3 ----------- */
+
+// /* Portrait and Landscape */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 2) {
+
+// }
+
+// /* Portrait */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 2) 
+//   and (orientation: portrait) {
+
+// }
+
+// /* Landscape */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 2) 
+//   and (orientation: landscape) {
+
+// }
+
+// /* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+// /* Portrait and Landscape */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) {
+
+// }
+
+// /* Portrait */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) 
+//   and (orientation: portrait) {
+
+// }
+
+// /* Landscape */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) 
+//   and (orientation: landscape) {
+
+// }
+
+// /* ----------- Galaxy S6 ----------- */
+
+// /* Portrait and Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) {
+
+// }
+
+// /* Portrait */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) 
+//   and (orientation: portrait) {
+
+// }
+
+// /* Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) 
+//   and (orientation: landscape) {
+
+// }
+
+// /* ----------- Google Pixel ----------- */
+
+// /* Portrait and Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) {
+
+// }
+
+// /* Portrait */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) 
+//   and (orientation: portrait) {
+
+// }
+
+// /* Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) 
+//   and (orientation: landscape) {
+
+// }
+
+// /* ----------- Google Pixel XL ----------- */
+
+// /* Portrait and Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) {
+
+// }
+
+// /* Portrait */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) 
+//   and (orientation: portrait) {
+// }
+
+// /* Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) 
+//   and (orientation: landscape) {
+
+// }
+

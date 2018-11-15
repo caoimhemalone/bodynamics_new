@@ -43,6 +43,8 @@ $("#blogNav").click(function() {
     }, 1000);
 });
 
+
+
 //For input fields 
 
 ( function( window ) {
@@ -117,3 +119,42 @@ function formFunction() {
 	    document.getElementById("contactForm").submit();
 
 }
+
+
+
+// For scroll reveal
+
+$(function(){  // $(document).ready shorthand
+  $('.slowReveal').fadeIn('slow');
+});
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.reveal').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},2500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+
+//For scroll to top
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
