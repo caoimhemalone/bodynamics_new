@@ -20,6 +20,12 @@ $green: #a9e20e;
     border-style: dotted;
 }
 
+//So the scroll has a bit of padding
+#memberships, #home, #team, #timetable, #about, #blog {
+  width: 100%;
+  height: 20px;
+}
+
 .rounded-circle {
     background-color: #fff;
     border: 1px solid red;
@@ -34,7 +40,8 @@ $green: #a9e20e;
 }
 
 .timetable {
-	padding: 3em;
+	//padding: 3em;
+  height: 50em;
 }
 
 .schedule {
@@ -50,7 +57,7 @@ iframe {
 }
 
 .about {
-  margin-top: 55%;
+  //margin-top: 55%;
 }
 .contact-info {
 	padding-top: 2em;
@@ -90,20 +97,60 @@ iframe {
   background-size: cover;
 }
 
-.blog {
+.blog, .timetable {
   background-image: url(../images/icon-collage.png);
 }
 
 .fixed-image {
   background-size: cover;
-  min-height:500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+
 }
 
 h3 {
-  padding-top: 1.5em;
+  //padding-top: 1.5em;
+}
+
+
+//For diagonal divs
+.edge--top {
+  position: relative;
+  z-index: 1;
+}
+.edge--top:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.edge--top:before {
+  top: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+.-berry {
+  background: #b52b4a;
+}
+
+.block {
+  color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0 0 200px;
+  padding: 20% 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 500;
 }
 
 // input fields
@@ -297,6 +344,9 @@ h3 {
       padding-right: 3.2%;
     }
   }
+  .timetable {
+    height: 36em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -310,6 +360,13 @@ h3 {
 
 }
 
+//Everything under a laptop 
+@media (max-width: 991px) {
+  .submit {
+    padding-top: 2em;
+  }
+}
+
  /* ----------- Tablets ----------- */
 
 @media (max-width: 1000px) {
@@ -318,9 +375,13 @@ h3 {
   width: 80%;
 }
 
-.about {
-  padding-top: 20%;
-}
+  .about {
+    //padding-top: 20%;
+  }
+
+      #memberships, #team, #timetable, #about, #blog {
+      height: 66px;
+  }
 }
 
 @media  (min-width: 992px) {
@@ -331,11 +392,15 @@ h3 {
       padding-right: 1.2%;
     }
   }
+
 }
 
- /* ----------- Laptop ----------- */
+ /* ----------- Laptop & large tablets ----------- */
 
-@media  (min-width: 1200px) {
+@media  (min-width: 1024px) {
+    #memberships, #team, #timetable, #about, #blog {
+      height: 66px;
+  }
 
   }
 
@@ -390,6 +455,10 @@ h3 {
       padding-right: 3.75%;
     }
   }
+
+  .timetable {
+    height: 36em;
+  }
 }
 
 /* Landscape */
@@ -423,6 +492,10 @@ h3 {
       right: 5%;
       padding-right: 3.3%;
     }
+  }
+
+  .timetable {
+    height: 35em;
   }
 }
 
@@ -491,6 +564,10 @@ h3 {
       bottom: 4%;
       padding-right: 3.2%;
     }
+  }
+
+  .timetable {
+    height: 36em;
   }
 
 }

@@ -116,7 +116,11 @@ if ( typeof define === 'function' && define.amd ) {
 })( window );
 
 function formFunction() {
-	    document.getElementById("contactForm").submit();
+	document.getElementById("contactForm").submit();
+  document.getElementsByClassName("inputMessage").value = "";
+  document.getElementsByClassName("inputSubject").value = "";
+  document.getElementsByClassName("inputEmail").value = "";
+
 
 }
 
