@@ -43,6 +43,25 @@ $("#blogNav").click(function() {
     }, 1000);
 });
 
+//Nav collapse
+ $(function(){ 
+     var navbarResponsive = $(".navbar-collapse"); // avoid dependency on #id
+     var navbarToggle = $(".navbar-toggler");
+     // "a:not([data-toggle])" - to avoid issues caused
+     // when you have dropdown inside navbar
+     navbarResponsive.on("click", "a:not([data-toggle])", null, function () {
+         navbarResponsive.collapse('hide');
+         navbarToggle.classList.toggle( "active" );
+     });
+ });
+
+
+//Nav X animation
+document.querySelector( "#nav-toggle" )
+  .addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
+
 
 
 //For input fields 
