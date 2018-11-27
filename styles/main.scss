@@ -1,6 +1,8 @@
  // Author: Caoimhe Malone (key-vah) 
 
+// Colours
 $green: #a9e20e;
+$white: #fff;
 
 .social-bar {
 	color: black;
@@ -42,6 +44,10 @@ $green: #a9e20e;
 .timetable {
 	//padding: 3em;
   height: 50em;
+
+  .container {
+    padding-top: 10em;
+  }
 }
 
 .schedule {
@@ -131,22 +137,39 @@ h3 {
 }
 .edge--top:before {
   top: 0;
-  -webkit-transform: skewY(1.5deg);
-          transform: skewY(1.5deg);
+  -webkit-transform: skewY(5.5deg);
+          transform: skewY(5.5deg);
   -webkit-transform-origin: 100% 0;
           transform-origin: 100% 0;
 }
-.-berry {
-  background: #b52b4a;
+.edge--top--reverse {
+  position: relative;
+  z-index: 1;
+}
+.edge--top--reverse:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+
+}
+.edge--top--reverse:before {
+  top: 0;
+  -webkit-transform: skewY(-5.5deg);
+          transform: skewY(-5.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
 }
 
-.block {
-  color: #fff;
-  font-family: 'Fira Sans', sans-serif;
-  margin: 0 0 200px;
-  padding: 20% 20px;
-  text-align: center;
+
+.white {
+  background-color: $white;
 }
+
 
 h1 {
   font-size: 32px;
@@ -317,64 +340,65 @@ h1 {
 }
 
 
-//Bootstrap overrides
-.row {
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
-.container {
-  h3 {
-    font-family: AvenirNextRegular,Arial,sans-serif;
-    text-transform: uppercase;
-    font-weight: 10;
-    letter-spacing: 1px;
-  }
-}
-
 //Nav X animation 
 
+$radius: 50px;
 
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: white;
-  position: absolute;
-  display: block;
-  content: '';
-}
-#nav-toggle span:before {
-  top: -10px; 
-}
-#nav-toggle span:after {
-  bottom: -10px;
+.hamburgler{
+    width: 2em;
+    height: 2em;
+    display: block;
+    transition: .3s ease all;
+
+    &.no-hamburgler{
+        transform: rotate(-45deg);
+    }
 }
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 500ms ease-in-out;
+.bun,
+.meat{
+    display: block;
+    width: 100%;
+    background: $green;
+    height: 20%;
+    transition: .3s ease all;
+    border-radius: $radius;
 }
-#nav-toggle.active span {
-  background-color: transparent;
+
+.top{
+     .no-hamburgler & {
+        height: 38%;
+        width: 20%;
+        margin-left: 40%;
+        border-radius: $radius $radius 0 0;
+    }
 }
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
+
+.bottom{
+    .no-hamburgler & {
+        height: 38%;
+        width: 20%;
+        margin-left: 40%;
+        border-radius: 0 0 $radius $radius;
+    }
 }
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
+
+.meat{
+    margin: 20% 0;
+    
+    .no-hamburgler &{
+        margin: 2% 0;
+
+    }
 }
 
 .navbar {
   button:focus {
     outline: none;
+  }
 }
-  
-}
+
+
 //*
 //*
 //*
@@ -773,3 +797,22 @@ h1 {
 
 // }
 
+
+//Bootstrap overrides
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.container {
+  h3 {
+    font-family: AvenirNextRegular,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 10;
+    letter-spacing: 1px;
+  }
+}
+
+.navbar-toggler {
+  border-color: #343a40 !important;
+}

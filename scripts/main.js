@@ -47,22 +47,30 @@ $("#blogNav").click(function() {
  $(function(){ 
      var navbarResponsive = $(".navbar-collapse"); // avoid dependency on #id
      var navbarToggle = $(".navbar-toggler");
+     //var hamburgerToggler = $(".hamburgler");
      // "a:not([data-toggle])" - to avoid issues caused
      // when you have dropdown inside navbar
      navbarResponsive.on("click", "a:not([data-toggle])", null, function () {
+         $(".hamburgler").toggleClass('no-hamburgler');
          navbarResponsive.collapse('hide');
          navbarToggle.classList.toggle( "active" );
+        
      });
  });
 
 
 //Nav X animation
-document.querySelector( "#nav-toggle" )
-  .addEventListener( "click", function() {
-    this.classList.toggle( "active" );
-  });
+// document.querySelector( "#nav-toggle" )
+//   .addEventListener( "click", function() {
+//     this.classList.toggle( "active" );
+//   });
 
-
+$(document).ready(function(){
+    $('.hamburgler').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('no-hamburgler');
+    });
+});
 
 //For input fields 
 
