@@ -19,7 +19,16 @@ $white: #fff;
 .membership-option {
 	padding: 2em;
 	border: 2px black;
-    border-style: dotted;
+  border-style: dotted;
+  background-color: $green;
+  color: $white;
+
+  &:hover {
+    background-color: #CBE38A;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+  }
 }
 
 //So the scroll has a bit of padding
@@ -28,25 +37,60 @@ $white: #fff;
   height: 60px;
 }
 
+.rounded-circle, .team-overlay {
+  background-color: #fff;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20%; 
+  background-size: cover;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
 .rounded-circle {
-    background-color: #fff;
-    border: 1px solid red;
-    height: 100px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    width: 100px;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 20%; 
+  position: relative;
+  z-index: 1;
+  border: 1px solid black;
+  margin: 0 auto;
+
+  &:hover {
+    z-index: -2;
+  }
+}
+
+
+.team-overlay {
+  position: absolute;
+  opacity: 0.5;
+    background-color: #000;
+    display: none;
+
+
+  &:hover {
+    cursor: pointer;
+    display: block;
+
+  }
+}
+
+.team-member {
+  margin-top: 5%;
+
+  p {
+    margin-top: 6%;
+  }
 }
 
 .timetable {
 	//padding: 3em;
   height: 50em;
 
-  .container {
-    padding-top: 10em;
+  #top-bar {
+    display: none !important;
+  }
+
+  #doc-title {
+    display: none !important;
   }
 }
 
@@ -54,6 +98,17 @@ $white: #fff;
   width: 50%;
   height: 400%;
   margin-left: 20%;
+}
+
+.schedule-mobile {
+  display: none;
+}
+
+.schedule-desktop {
+  display: block;
+   margin-left: 0%;
+  width: 100%;
+  height: 350%;
 }
 
 iframe {
@@ -67,6 +122,10 @@ iframe {
 }
 .contact-info {
 	padding-top: 2em;
+
+  .contact-title {
+    margin-left: 30%;
+  }
 }
 
 .contact-listing {
@@ -77,6 +136,10 @@ iframe {
 
 .contact-form {
     padding-left: 30%;
+}
+
+#contactForm {
+  margin-left: 30%;
 }
 
 .submit {
@@ -91,6 +154,22 @@ iframe {
     img {
     	width: 100%;
     }
+}
+
+.blog-heading {
+  a {
+    color: #000;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+      color: #000; /*Overriding bootstrap */
+    }
+  }
+}
+
+.carousel {
+  padding-top: 3em;
 }
 
 .carousel-item {
@@ -303,6 +382,15 @@ h1 {
   transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
 }
 
+#submitBtn {
+  color: $white;
+  background-color: #343a40;
+  border-radius: 6px;
+  font-weight: bold;
+  width: 60%;
+  margin-top: 2em;
+}
+
 // For scroll reveal 
 .reveal
 {
@@ -312,17 +400,26 @@ h1 {
 //Scroll to top
 .scrollToTop {
   button {
-    background-color: $green;
+    //background-color: $green;
     position: fixed;
     float:right;
     right: 2%;
-    background-image: url(../images/scroll.png); 
+    background-image: url(../images/scroll2.png); 
     bottom: 1%;
     background-repeat: no-repeat;
-    z-index: 1;
-    color: #000;
+    z-index: 3;
+    color: $green;
     text-decoration: none;
-    border-style: none;
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-color: #000 4px solid;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
     button:focus {
@@ -442,6 +539,15 @@ $radius: 50px;
   .submit {
     padding-top: 2em;
   }
+
+  #submitBtn {
+    margin-top: 2em;
+    width: 80%;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+
 }
 
  /* ----------- Tablets ----------- */
@@ -478,6 +584,28 @@ $radius: 50px;
     #memberships, #team, #timetable, #about, #blog {
       height: 66px;
   }
+
+  }
+
+
+  /* ----------- iPad ----------- */
+
+//Anything under an ipad
+  @media only screen 
+and (max-device-width : 1023px)  { 
+
+    .schedule-desktop {
+    display: none;
+  }
+
+  .schedule-mobile {
+    display: block;
+  }
+}
+
+ @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px)  {
 
   }
 
@@ -572,8 +700,21 @@ $radius: 50px;
   }
 
   .timetable {
-    height: 35em;
+    height: 42em;
+
+    .container {
+      //padding-right: 0px;
+      //padding-left: 0px;
+      padding-top: 2em;
+    }
   }
+
+    .schedule {
+      margin-left: 0%;
+      width: 100%;
+      height: 350%;
+    }
+  
 }
 
 /* Landscape */
@@ -645,6 +786,18 @@ $radius: 50px;
 
   .timetable {
     height: 36em;
+  }
+
+  #contactForm {
+  margin-left: 0;
+}
+
+  .contact-info {
+    .contact-title {
+    margin-left: 0;
+    padding-top: 2em;
+    }
+
   }
 
 }
@@ -802,6 +955,13 @@ $radius: 50px;
 .row {
   margin-right: 0px;
   margin-left: 0px;
+}
+
+.timetable {
+  .col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .container {

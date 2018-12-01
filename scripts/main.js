@@ -47,7 +47,6 @@ $("#blogNav").click(function() {
  $(function(){ 
      var navbarResponsive = $(".navbar-collapse"); // avoid dependency on #id
      var navbarToggle = $(".navbar-toggler");
-     //var hamburgerToggler = $(".hamburgler");
      // "a:not([data-toggle])" - to avoid issues caused
      // when you have dropdown inside navbar
      navbarResponsive.on("click", "a:not([data-toggle])", null, function () {
@@ -56,15 +55,13 @@ $("#blogNav").click(function() {
          navbarToggle.classList.toggle( "active" );
         
      });
+
+  
  });
 
 
-//Nav X animation
-// document.querySelector( "#nav-toggle" )
-//   .addEventListener( "click", function() {
-//     this.classList.toggle( "active" );
-//   });
 
+//Nav X animation
 $(document).ready(function(){
     $('.hamburgler').click(function(e){
         e.preventDefault();
@@ -72,8 +69,9 @@ $(document).ready(function(){
     });
 });
 
-//For input fields 
 
+
+//For input fields 
 ( function( window ) {
 
 'use strict';
