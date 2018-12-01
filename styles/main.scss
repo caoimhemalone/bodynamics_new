@@ -493,6 +493,10 @@ $radius: 50px;
   button:focus {
     outline: none;
   }
+
+  .nav-item :hover {
+    cursor: pointer;
+  }
 }
 
 
@@ -585,6 +589,12 @@ $radius: 50px;
       height: 66px;
   }
 
+  #submitBtn {
+    width: 80%;
+    margin-top: 2em;
+    margin-left: 3em;
+  }
+
   }
 
 
@@ -601,6 +611,10 @@ and (max-device-width : 1023px)  {
   .schedule-mobile {
     display: block;
   }
+
+  .membership-option {
+    margin-bottom: 2em;
+  }
 }
 
  @media only screen 
@@ -608,6 +622,30 @@ and (min-device-width : 768px)
 and (max-device-width : 1023px)  {
 
   }
+
+
+  /* ----------- iPad Mini ----------- */
+
+  /* iPad Mini in portrait & landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) { 
+  .schedule {
+    margin-left: 10%;
+  }
+}
+
+/* iPad Mini in landscape only */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { /* STYLE */}
+
+/* iPad Mini in portrait only */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { /* STYLE */ }
 
 
   /* ----------- iPhone 4 and 4S ----------- */
@@ -734,6 +772,10 @@ and (max-device-width : 1023px)  {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
 
+    .timetable {
+    height: 44em;
+  }
+
 }
 
 /* Portrait */
@@ -785,7 +827,7 @@ and (max-device-width : 1023px)  {
   }
 
   .timetable {
-    height: 36em;
+    height: 44em;
   }
 
   #contactForm {
@@ -839,13 +881,30 @@ and (max-device-width : 1023px)  {
 
 // }
 
+ /* ----------- Galaxy Note 2 ----------- */
+
+ /*  Galaxy Note2 - Portrait */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and  (max-device-height: 640px) and (orientation: portrait) {
+    
+    .schedule {
+      margin-left: 10%;
+    }
+
+}
+
+
+
 // /* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
-// /* Portrait and Landscape */
+/* Portrait and Landscape */
 // @media screen 
 //   and (device-width: 320px) 
 //   and (device-height: 640px) 
 //   and (-webkit-device-pixel-ratio: 3) {
+
+//     .schedule {
+//       margin-left: 10%;
+//     }
 
 // }
 

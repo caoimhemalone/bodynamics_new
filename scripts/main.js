@@ -55,9 +55,18 @@ $("#blogNav").click(function() {
          navbarToggle.classList.toggle( "active" );
         
      });
-
-  
  });
+
+ //Nav active
+var nav = document.getElementById("navbarResponsive");
+var navItem = nav.getElementsByClassName("nav-item");
+for (var i = 0; i < navItem.length; i++) {
+  navItem[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 
 
 
