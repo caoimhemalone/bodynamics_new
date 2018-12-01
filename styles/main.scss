@@ -154,19 +154,26 @@ iframe {
     img {
     	width: 100%;
     }
-}
-
-.blog-heading {
-  a {
-    color: #000;
-    font-weight: bold;
 
     &:hover {
-      text-decoration: underline;
+      cursor: pointer;
+    }
+}
+
+.blog {
+  a {
+    color: #000;
+
+    &:hover {
+      text-decoration: none;
       color: #000; /*Overriding bootstrap */
+      font-weight: bold;
+
+      .blog-hea
     }
   }
 }
+
 
 .carousel {
   padding-top: 3em;
