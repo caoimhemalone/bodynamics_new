@@ -33,6 +33,12 @@ $dark-grey: #343a40;
 
 }
 
+.memberships {
+  button:focus {
+    outline: 1px  $dark-grey;
+    }
+}
+
     .signUpBtn {
     background-color: $dark-grey;
     border-radius: 6px;
@@ -41,10 +47,16 @@ $dark-grey: #343a40;
     text-decoration: none;
     margin: 5%;
     width: 90%;
+    border: 4px $dark-grey; /* can't see it but it's so on the hover the text position doesn't move */
+    border-style: solid;
     &:hover {
       cursor: pointer;
-      color: #CBE38A;
+      color: $green;
       text-decoration: none;
+      background-color: $white;
+      border: 4px $green;
+      border-style: solid;
+      font-weight: bold;
     }
   }
 
@@ -436,7 +448,7 @@ h1 {
     bottom: 1%;
     background-repeat: no-repeat;
     z-index: 3;
-    color: $green;
+    color: transparent;
     text-decoration: none;
     border-style: solid;
     background-color: transparent;
@@ -444,15 +456,17 @@ h1 {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-color: #000 4px solid;
+    display: block;
+    width: 2.5%;
 
     &:hover {
       cursor: pointer;
     }
   }
 
-    button:focus {
-      outline: 1px  $green;
-    }
+  button:focus {
+    outline: 1px  $green;
+  }
   
 
   a {
@@ -536,7 +550,7 @@ $radius: 50px;
     &:hover {
       cursor: pointer;
       color: $white;
-      text-decoration: none;
+      text-decoration: none; 
     }
   }
 }
@@ -555,7 +569,7 @@ $radius: 50px;
 //*
 //Media Queries 
 
-
+//Random
 @media (min width: 569px) {
   .scrollToTop {
     button {
@@ -574,11 +588,12 @@ $radius: 50px;
     button {
       bottom: 4%;
       right: 3%;
-      padding-right: 1.5%;
+      padding-right: 2.5%;
     }
   }
 
 }
+
 
 //Everything under a laptop 
 @media (max-width: 991px) {
@@ -638,6 +653,25 @@ $radius: 50px;
   }
 
   }
+
+  //Large Laptop
+   @media only screen 
+and (min-device-width : 1025px) 
+and (max-device-width : 1440px) {
+  .scrollToTop button {
+    padding-right: 0%;
+    width: 2%;
+  }
+}
+
+// 4K Monitor
+   @media only screen 
+and (min-device-width : 2560px)  {
+  .scrollToTop button {
+    padding-right: 0%;
+    width: 1.15%;
+  }
+}
 
 
   /* ----------- iPad ----------- */
@@ -775,7 +809,7 @@ and (orientation : portrait) { /* STYLE */ }
     button {
       bottom: 4%;
       right: 5%;
-      padding-right: 3.3%;
+      padding-right: 5%;
     }
   }
 
