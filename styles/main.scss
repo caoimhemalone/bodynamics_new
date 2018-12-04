@@ -3,6 +3,7 @@
 // Colours
 $green: #a9e20e;
 $white: #fff;
+$dark-grey: #343a40;
 
 .social-bar {
 	color: black;
@@ -29,7 +30,23 @@ $white: #fff;
     color: #000;
     cursor: pointer;
   }
+
 }
+
+    .signUpBtn {
+    background-color: $dark-grey;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    color: $white;
+    text-decoration: none;
+    margin: 5%;
+    width: 90%;
+    &:hover {
+      cursor: pointer;
+      color: #CBE38A;
+      text-decoration: none;
+    }
+  }
 
 //So the scroll has a bit of padding
 #memberships, #team, #timetable, #about, #blog {
@@ -169,7 +186,7 @@ iframe {
       color: #000; /*Overriding bootstrap */
       font-weight: bold;
 
-      .blog-hea
+      
     }
   }
 }
@@ -254,6 +271,10 @@ h3 {
 
 .white {
   background-color: $white;
+}
+
+.dark-grey {
+  background-color: $dark-grey
 }
 
 
@@ -497,12 +518,26 @@ $radius: 50px;
 }
 
 .navbar {
-  button:focus {
+  .hamburgerBtn:focus {
     outline: none;
   }
 
   .nav-item :hover {
     cursor: pointer;
+  }
+
+  .signUpBtn {
+    background-color: $green;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    color: $dark-grey;
+    text-decoration: none;
+    margin-left: 1em;
+    &:hover {
+      cursor: pointer;
+      color: $white;
+      text-decoration: none;
+    }
   }
 }
 
@@ -583,7 +618,7 @@ $radius: 50px;
     button {
       bottom: 3%;
       right: 3%;
-      padding-right: 1.2%;
+      padding-right: 0.9%;
     }
   }
 

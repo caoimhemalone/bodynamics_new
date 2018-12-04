@@ -43,6 +43,13 @@ $("#blogNav").click(function() {
     }, 1000);
 });
 
+//Sign Up nav
+$("#signUpNav").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#memberships").offset().top
+    }, 1000);
+});
+
 //Nav collapse
  $(function(){ 
      var navbarResponsive = $(".navbar-collapse"); // avoid dependency on #id
@@ -78,6 +85,13 @@ $(document).ready(function(){
     });
 });
 
+//For Sign Up Reveal
+
+jQuery(document).ready(function(){
+        jQuery('.signUpShow').on('click', function(event) {        
+             jQuery('.signUpSection').removeClass('hide');
+        });
+    });
 
 
 //For input fields 

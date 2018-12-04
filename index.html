@@ -39,7 +39,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container ">
 				<a class="navbar-brand" href="#">Bodynamics</a>
-		        <button id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		        <button id="nav-toggle" class="navbar-toggler hamburgerBtn" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 		        	<a href="#toggle" class="hamburgler">
 					    <div class="bun top"></div>
 					    <div class="meat"></div>
@@ -67,7 +67,11 @@
 						<li class="nav-item">
 							<a class="nav-link" id="blogNav">Blog</a>
 						</li>
+						
 					</ul>
+					<div>
+						<a  class="signUpBtn" id="signUpNav"> Sign Up </a>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -132,6 +136,7 @@
 										<div class="membership-option  slowReveal">
 											<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 											<p> €00 </p>
+
 											
 										</div>
 									</div>
@@ -140,10 +145,20 @@
 											<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 											<p> €00 </p>
 											
+											
 										</div>
 									</div>
 								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button class="signUpBtn signUpShow">Sign Up</button>
+									</div>
+								</div>
 							</div>
+						</div>
+						<div id="signup"></div>
+						<div class="signUpSection hide" id="signUpSection">
+							<h1>Your fitness journey starts here</h1>
 						</div>
 					</div>
 				</div>
@@ -180,12 +195,12 @@
 						</div>
 					</div>
 				</div>
+			</div>
 			</div> 
 
 				
 				<div id="timetable"></div>
 				<div class="timetable fixed-image">
-					<div class="edge--top--reverse">
 					<div class="container">
 					<h3 class="reveal">Timetable</h3>
 
@@ -198,7 +213,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
 
 				</div>
 				
@@ -408,45 +422,6 @@
 	    <!-- For medium post embedding -->
 		<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
-
-
-
-	    <!-- input fields  -->
-<!-- 		<script>
-			(function() {
-				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-				if (!String.prototype.trim) {
-					(function() {
-						// Make sure we trim BOM and NBSP
-						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-						String.prototype.trim = function() {
-							return this.replace(rtrim, '');
-						};
-					})();
-				}
-
-				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
-					// in case the input is already filled..
-					if( inputEl.value.trim() !== '' ) {
-						classie.add( inputEl.parentNode, 'input--filled' );
-					}
-
-					// events:
-					inputEl.addEventListener( 'focus', onInputFocus );
-					inputEl.addEventListener( 'blur', onInputBlur );
-				} );
-
-				function onInputFocus( ev ) {
-					classie.add( ev.target.parentNode, 'input--filled' );
-				}
-
-				function onInputBlur( ev ) {
-					if( ev.target.value.trim() === '' ) {
-						classie.remove( ev.target.parentNode, 'input--filled' );
-					}
-				}
-			})();
-		</script> -->
 	</body>
 </html>
 
