@@ -543,6 +543,7 @@ $radius: 50px;
   .signUpBtn {
     background-color: $green;
     border-radius: 6px;
+    border-color: $green;
     padding: 0.5em 1em;
     color: $dark-grey;
     text-decoration: none;
@@ -570,7 +571,7 @@ $radius: 50px;
 //Media Queries 
 
 //Random
-@media (min width: 569px) {
+@media (min width: 569px) and (max-width: 767px) {
   .scrollToTop {
     button {
       bottom: 4%;
@@ -583,7 +584,7 @@ $radius: 50px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px ){
   .scrollToTop {
     button {
       bottom: 4%;
@@ -628,7 +629,7 @@ $radius: 50px;
   }
 }
 
-@media  (min-width: 992px) {
+@media  (min-width: 992px) and (max-width:1024px) {
   .scrollToTop {
     button {
       bottom: 3%;
@@ -656,19 +657,19 @@ $radius: 50px;
 
   //Large Laptop
    @media only screen 
-and (min-device-width : 1025px) 
-and (max-device-width : 1440px) {
+and (min-width : 1025px) 
+and (max-width : 1440px) {
   .scrollToTop button {
-    padding-right: 0%;
-    width: 2%;
+    padding-right: 1%;
+    width: 2.25%;
   }
 }
 
 // 4K Monitor
    @media only screen 
-and (min-device-width : 2560px)  {
+and (min-width : 1441px)  {
   .scrollToTop button {
-    padding-right: 0%;
+    padding-right: 1.25%;
     width: 1.15%;
   }
 }
