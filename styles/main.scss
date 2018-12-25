@@ -17,6 +17,7 @@ $dark-grey: #343a40;
 .show {
   display: block;
 }
+
 .membership-option {
 	padding: 2em;
 	border: 2px black;
@@ -626,6 +627,10 @@ $radius: 50px;
 
       #memberships, #team, #timetable, #about, #blog {
       height: 66px;
+  }
+
+  #contactForm {
+    margin-left: 0;
   }
 }
 
