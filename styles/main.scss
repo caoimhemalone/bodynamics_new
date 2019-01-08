@@ -18,18 +18,51 @@ $dark-grey: #343a40;
   display: block;
 }
 
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1em;
+  font-family: 'PT Sans Narrow', sans-serif !important; //Override bootstrap h1 inherit
+  position: absolute;
+  z-index: 2;
+  float: right;
+  right: 0;
+  color: $white!important; //Override bootstrap color inherit
+}
 .membership-option {
 	padding: 2em;
 	border: 2px black;
   border-style: dotted;
   background-color: $green;
   color: $white;
+  height: 100%;
 
   &:hover {
     background-color: #CBE38A;
     font-weight: bold;
     color: #000;
     cursor: pointer;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    height: 20%;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .membership-price {
+    text-align: center;
+    font-size: 1.5rem;
+    color: $dark-grey;
+  }
+
+  img {
+    float: none;
   }
 
 }
