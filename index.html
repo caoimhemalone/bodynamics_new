@@ -18,6 +18,11 @@
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 		
+		<!-- For fade in -->
+		 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+		
 	</head>
 
 	<body>
@@ -74,19 +79,19 @@
 		          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 		        </ol>
 		        <div class="carousel-inner" role="listbox">
-		          <div class="carousel-item active" style="background-image: url('images/example3.jpg')">
+		          <div class="carousel-item active" style="background-image: url('images/Bodynamics-86.jpg')">
 		            <div class="carousel-caption d-none d-md-block">
 		              <h3>First Slide</h3>
 		              <p>This is a description for the first slide.</p>
 		            </div>
 		          </div>
-		          <div class="carousel-item" style="background-image: url('images/example2.jpg')">
+		          <div class="carousel-item" style="background-image: url('images/Bodynamics-29.jpg')">
 		            <div class="carousel-caption d-none d-md-block">
 		              <h3>Second Slide</h3>
 		              <p>This is a description for the second slide.</p>
 		            </div>
 		          </div>
-		          <div class="carousel-item" style="background-image: url('images/example4.jpg')">
+		          <div class="carousel-item" style="background-image: url('images/Bodynamics-7.jpg')">
 		            <div class="carousel-caption d-none d-md-block">
 		              <h3>Third Slide</h3>
 		              <p>This is a description for the third slide.</p>
@@ -120,10 +125,13 @@
 											<p><span class="membership-heading">Membership 1 </span>
 
 											</br>
-											<img src="images/icons/gym.png">
+											<img data-aos="fade-up-right" class="image-slide" src="images/icons/gym-white.png">
 											 </br> Unlimited Month Classes</p>
 											<p class="membership-price"> €65 </p>
-											<p><span class="membership-heading">Membership 2</span> </br> 3 Month Unlimited Classes</p>
+											<p class="line-break">- - - - - - - - - - - - - - - - - - - -  </p>
+											<p><span class="membership-heading">Membership 2</span>
+											<img data-aos="fade-up-left" src="images/icons/gym-woman-white.png">
+											</br> 3 Month Unlimited Classes</p>
 											<p class="membership-price"> €170 </p>
 
 										</div>
@@ -438,7 +446,7 @@
 	      <div class="container">
 	        <p class="m-0 text-center text-white">Copyright &copy; Bodynamics 2018</p>
 	        <p class="m-0 text-center text-white">Web Development & Design by key-vah</p>
-	        < <p class="m-0 text-center text-white">Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+	         <p class="m-0 text-center text-white icon-footer">Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
 
 	      </div>
 	      <!-- /.container -->
@@ -452,6 +460,12 @@
 	    <script type="text/javascript" src="scripts/built.min.js"></script>
 	    <!-- For medium post embedding -->
 		<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+		<!-- For fade in -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		  <script>
+		    AOS.init();
+		  </script>
 
 	</body>
 </html>

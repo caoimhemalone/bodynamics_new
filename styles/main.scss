@@ -31,17 +31,21 @@ h1 {
 }
 .membership-option {
 	padding: 2em;
-	border: 2px black;
-  border-style: dotted;
-  background-color: $green;
+	//border: 2px black;
+  //border-style: dotted;
+  background-color: $dark-grey;
   color: $white;
   height: 100%;
 
   &:hover {
-    background-color: #CBE38A;
+    background-color: $green;
     font-weight: bold;
     color: #000;
     cursor: pointer;
+
+    .membership-price {
+      color: #fff;
+    }
   }
 
   h2 {
@@ -58,12 +62,22 @@ h1 {
   .membership-price {
     text-align: center;
     font-size: 1.5rem;
-    color: $dark-grey;
+    color: $green;
+    font-family:AvenirNextRegular,Arial,sans-serif;
   }
 
   img {
-    float: none;
+    width: 100%;
+    padding-left: 37.5%;
+    padding-right: 37.5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
+
+  .line-break {
+    text-align: center;
+  }
+
 
 }
 
@@ -590,6 +604,14 @@ $radius: 50px;
   }
 }
 
+footer {
+  .icon-footer {
+    font-size: 0.5rem;
+  }
+}
+
+
+
 
 //*
 //*
@@ -729,6 +751,12 @@ and (max-device-width : 1023px)  {
 
   .membership-option {
     margin-bottom: 2em;
+    height: 99%;
+
+    .line-break {
+      font-size: 55%;
+    }
+
   }
 }
 
@@ -798,6 +826,12 @@ and (orientation : portrait) { /* STYLE */ }
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    .membership-option {
+      .line-break {
+        font-size: 72%;
+      }
+    }
+
 }
 
 /* Portrait */
@@ -835,7 +869,11 @@ and (orientation : portrait) { /* STYLE */ }
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
-
+    .membership-option {
+      .line-break {
+        font-size: 100%;
+      }
+    }
 }
 
 /* Portrait */
