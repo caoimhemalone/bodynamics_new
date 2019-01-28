@@ -5,14 +5,6 @@ $green: #a9e20e;
 $white: #fff;
 $dark-grey: #343a40;
 
-.social-bar {
-	color: black;
-	padding: 0;
-
-  img {
-    width: 15%;
-  }
-}
 
 .hide {
   display: none;
@@ -171,9 +163,20 @@ h1 {
 
 .team-member {
   margin-top: 5%;
+  text-align: center;
+
+
+  h3 {
+    font-size: 1rem;
+    padding-top: 1em;
+  }
 
   p {
     margin-top: 6%;
+
+    a {
+      color: $green;
+    }
   }
 }
 
@@ -228,6 +231,14 @@ iframe {
     padding-left: 2em;
     padding-right: 7em;
     padding-top: 2em;
+
+  a {
+    color: $green;
+
+    &:hover {
+      color: $dark-grey;
+    }
+  }
 }
 
 .contact-form {
@@ -266,6 +277,12 @@ iframe {
       font-weight: bold;
 
       
+    }
+  }
+
+  .blog-preview {
+    span {
+      font-weight: bold;
     }
   }
 }
@@ -628,6 +645,31 @@ footer {
   .icon-footer {
     font-size: 0.5rem;
   }
+
+  .social-bar {
+  color: black;
+  padding: 0;
+
+    img {
+      width: 33%;
+    }
+  }
+
+  ul {
+    margin-left: 15em;
+    margin-right: 15em;
+    justify-content: center;
+    display: flex;
+  }
+
+  li {
+    display: table-cell;
+
+    a {
+      padding-left: 33%;
+      padding-right: 33%;
+    }
+  }
 }
 
 
@@ -645,6 +687,20 @@ footer {
 //*
 //*
 //Media Queries 
+
+//Normal Phone 
+
+@media (max-width: 767px) {
+
+    footer {
+    ul {
+      padding-right: 1em;
+      padding-left: 1em;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
 
 //Random
 @media (min width: 569px) and (max-width: 767px) {
@@ -723,6 +779,7 @@ footer {
   #contactForm {
     margin-left: 0;
   }
+
 }
 
 @media  (min-width: 992px) and (max-width:1024px) {
@@ -799,6 +856,15 @@ and (max-device-width : 1023px)  {
  @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1023px)  {
+
+  footer {
+    ul {
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 8em;
+      padding-left: 8em;
+    }
+  }
 
   }
 
