@@ -212,3 +212,14 @@ $("a[href='#top']").click(function() {
 });
 
 
+//For mobile timetable nav
+$(function() { 
+    $('.timetable-bottom-nav').on('click','li', function ( e ) {
+        e.preventDefault();
+        $(this).parents('.timetable-bottom-nav').find('.active').removeClass('active').end().end().addClass('active');
+
+        //Show Timetable according to day selected 
+        // If the id="day" is active then show td for that day 
+
+    });
+});

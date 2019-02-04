@@ -181,16 +181,40 @@ h1 {
 }
 
 .timetable {
-	//padding: 3em;
-  height: 50em;
+  height: 56em;
 
-  #top-bar {
-    display: none !important;
+.timetable-mobile {
+  display: none;
+}
+  .class-table {
+    background-color: $dark-grey;
+    color: $white;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    border-top: 8px solid $green;
+
+    span {
+      color: $green;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    th {
+      background-color: #232a35;
+    }
+
+    td {
+      border: 1px solid $white;
+      padding-top:2em;
+      padding-bottom: 2em;
+      width: 14.286%;
+    }
   }
 
-  #doc-title {
-    display: none !important;
-  }
 }
 
 .schedule {
@@ -621,6 +645,15 @@ $radius: 50px;
     outline: none;
   }
 
+  .navbar-brand {
+    width: 10%;
+    padding-top: 0.2em;
+    padding-bottom:0.2em;
+    img {
+      width:100%;
+    }
+  }
+
   .nav-item :hover {
     cursor: pointer;
   }
@@ -691,6 +724,109 @@ footer {
 //Normal Phone 
 
 @media (max-width: 767px) {
+
+  .navbar {
+    .navbar-brand {
+      width: 18%;
+      padding: 0;
+    }
+  }
+
+  .timetable {
+    .timetable-mobile {
+      display: block;
+
+      td {
+        display: none;
+      }
+
+      .active {
+        display: inline-block;
+      }
+    }
+
+    .timetable-desktop {
+      display: none;
+    }
+
+    .class-table {
+      td {
+        width: 100%;
+      }
+      ul {
+        padding: 0;
+
+        .active {
+          display: block;
+        }
+
+        li {
+          display: none;
+        }
+      }
+    }
+
+      .timetable-bottom-nav {
+        background-color: #232a35;
+        width: 100%;
+        color: $white;
+        height: 3em;
+
+        ul {
+          padding: 0.5em 0.3em 0 0.3em;
+          width: 100%;
+          margin-bottom: 0;
+          height: 100%;
+          
+        }
+
+        li {
+          display: inline-block;
+          background-color: $green;
+          border-radius: 5px 5px 0 0;
+          line-height: 0.5em;
+          height: 100%;
+          border-style: none;
+          width: 13.25%;
+          overflow: hidden;
+        }
+
+        hr {
+          background-color: $green;
+          width: 100%;
+          height: 0.5em;
+          margin: 0;
+          padding: 0;
+          z-index: 2;
+          position: relative;
+          border-top: none;
+        }
+
+      }
+
+      .navbar {
+        padding: 0;
+        a {
+          float: left;
+          // display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 1em 0.5em;
+          text-decoration: none;
+          font-size: 0.9rem;
+          width: 100%;
+        }
+
+        .active {
+          background-color: #232a35;
+          color: white;
+        }
+
+        
+
+      }
+    
+  }
 
     footer {
     ul {
@@ -772,8 +908,8 @@ footer {
     //padding-top: 20%;
   }
 
-      #memberships, #team, #timetable, #about, #blog {
-      height: 66px;
+  #memberships, #team, #timetable, #about, #blog {
+   height: 13px;
   }
 
   #contactForm {
@@ -803,7 +939,7 @@ footer {
   #submitBtn {
     width: 80%;
     margin-top: 2em;
-    margin-left: 3em;
+    margin-left: 1em;
   }
 
   }
@@ -1082,7 +1218,7 @@ and (orientation : portrait) { /* STYLE */ }
   }
 
   .timetable {
-    height: 44em;
+    height: 49em;
   }
 
   #contactForm {
