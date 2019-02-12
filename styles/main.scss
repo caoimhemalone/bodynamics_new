@@ -327,7 +327,7 @@ iframe {
 }
 
 .blog, .timetable {
-  background-image: url(../images/icon-collage.png);
+  background-image: url(../images/fixedImage.png);
 }
 
 .fixed-image {
@@ -826,6 +826,10 @@ footer {
 
       }
     
+  }
+
+  .fixed-image {
+    background-attachment: unset;
   }
 
     footer {
