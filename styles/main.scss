@@ -312,6 +312,8 @@ iframe {
 }
 
 
+
+
 .carousel {
   padding-top: 3em;
 }
@@ -327,10 +329,10 @@ iframe {
 }
 
 .blog, .timetable {
-  background-image: url(../images/fixedImage.png);
+  background-image: url(../images/icon-collage.png);
 }
 
-.fixed-image {
+.blog, .timetable {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -828,9 +830,6 @@ footer {
     
   }
 
-  .fixed-image {
-    background-attachment: unset;
-  }
 
     footer {
     ul {
@@ -897,6 +896,15 @@ footer {
 
   }
 
+  .blog {
+    background-size: 35em;
+  }
+
+  .blog, .timetable {
+    background-attachment: unset;
+    background-repeat: repeat;
+  }
+
 
 }
 
@@ -913,7 +921,7 @@ footer {
   }
 
   #memberships, #team, #timetable, #about, #blog {
-   height: 13px;
+   height: 40px;
   }
 
   #contactForm {
