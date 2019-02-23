@@ -5,6 +5,9 @@ $green: #a9e20e;
 $white: #fff;
 $dark-grey: #343a40;
 
+.grey {
+  color: $dark-grey !important;
+}
 
 .hide {
   display: none;
@@ -539,6 +542,10 @@ h1 {
   font-weight: bold;
   width: 60%;
   margin-top: 2em;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 // For scroll reveal 
@@ -921,7 +928,7 @@ footer {
   }
 
   #memberships, #team, #timetable, #about, #blog {
-   height: 40px;
+   height: 70px;
   }
 
   #contactForm {
@@ -945,7 +952,7 @@ footer {
 
 @media  (min-width: 1024px) {
     #memberships, #team, #timetable, #about, #blog {
-      height: 66px;
+      height: 82px;
   }
 
   #submitBtn {

@@ -59,7 +59,7 @@ $("#signUpNav").click(function() {
      navbarResponsive.on("click", "a:not([data-toggle])", null, function () {
          $(".hamburgler").toggleClass('no-hamburgler');
          navbarResponsive.collapse('hide');
-         navbarToggle.classList.toggle( "active" );
+         //navbarToggle.classList.toggle( "active" );
         
      });
  });
@@ -223,3 +223,414 @@ $(function() {
 
     });
 });
+
+//Monday
+$(document).ready(function(){
+    $('.timetable-bottom-nav li:nth-child(1)').click(function(){
+        $('.class-table tr:nth-child(2) td:nth-child(1)').addClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(3) td:nth-child(1)').addClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(4) td:nth-child(1)').addClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(5) td:nth-child(1)').addClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(6) td:nth-child(1)').addClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(7) td:nth-child(1)').addClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(7)').removeClass('active');
+
+
+
+    });
+});
+
+//Tuesday
+$(document).ready(function(){
+    $('.timetable-bottom-nav li:nth-child(2)').click(function(){
+        $('.class-table tr:nth-child(2) td:nth-child(2)').addClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(7)').removeClass('active');
+
+
+        $('.class-table tr:nth-child(3) td:nth-child(2)').addClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(4) td:nth-child(2)').addClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(5) td:nth-child(2)').addClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(6) td:nth-child(2)').addClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(7) td:nth-child(2)').addClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(7)').removeClass('active');
+
+
+    });
+});
+
+//Wednesday
+$(document).ready(function(){
+    $('.timetable-bottom-nav li:nth-child(3)').click(function(){
+        $('.class-table tr:nth-child(2) td:nth-child(3)').addClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(7)').removeClass('active');
+
+
+        $('.class-table tr:nth-child(3) td:nth-child(3)').addClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(4) td:nth-child(3)').addClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(5) td:nth-child(3)').addClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(6) td:nth-child(3)').addClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(7) td:nth-child(3)').addClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(7)').removeClass('active');
+
+
+    });
+});
+
+//Thursday
+$(document).ready(function(){
+    $('.timetable-bottom-nav li:nth-child(4)').click(function(){
+        $('.class-table tr:nth-child(2) td:nth-child(4)').addClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(7)').removeClass('active');
+
+
+        $('.class-table tr:nth-child(3) td:nth-child(4)').addClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(4) td:nth-child(4)').addClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(5) td:nth-child(4)').addClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(6) td:nth-child(4)').addClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(7) td:nth-child(4)').addClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(7)').removeClass('active');
+
+
+    });
+});
+
+//Friday
+$(document).ready(function(){
+    $('.timetable-bottom-nav li:nth-child(5)').click(function(){
+        $('.class-table tr:nth-child(2) td:nth-child(5)').addClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(7)').removeClass('active');
+
+
+        $('.class-table tr:nth-child(3) td:nth-child(5)').addClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(4) td:nth-child(5)').addClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(5) td:nth-child(5)').addClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(6) td:nth-child(5)').addClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(7) td:nth-child(5)').addClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(7)').removeClass('active');
+
+
+    });
+});
+
+//Saturday
+$(document).ready(function(){
+    $('.timetable-bottom-nav li:nth-child(6)').click(function(){
+        $('.class-table tr:nth-child(2) td:nth-child(6)').addClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(7)').removeClass('active');
+
+
+        $('.class-table tr:nth-child(3) td:nth-child(6)').addClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(4) td:nth-child(6)').addClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(5) td:nth-child(6)').addClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(7)').removeClass('active');
+        
+        $('.class-table tr:nth-child(6) td:nth-child(6)').addClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(7)').removeClass('active');
+
+        $('.class-table tr:nth-child(7) td:nth-child(6)').addClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(2)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(7)').removeClass('active');
+
+
+    });
+});
+
+//Sunday
+$(document).ready(function(){
+    $('.timetable-bottom-nav li:nth-child(7)').click(function(){
+        $('.class-table tr:nth-child(2) td:nth-child(7)').addClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(2) td:nth-child(2)').removeClass('active');
+
+
+        $('.class-table tr:nth-child(3) td:nth-child(7)').addClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(3) td:nth-child(2)').removeClass('active');
+
+        $('.class-table tr:nth-child(4) td:nth-child(7)').addClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(4) td:nth-child(2)').removeClass('active');
+        
+        $('.class-table tr:nth-child(5) td:nth-child(7)').addClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(5) td:nth-child(2)').removeClass('active');
+        
+        $('.class-table tr:nth-child(6) td:nth-child(7)').addClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(6) td:nth-child(2)').removeClass('active');
+
+        $('.class-table tr:nth-child(7) td:nth-child(7)').addClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(1)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(3)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(4)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(5)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(6)').removeClass('active');
+        $('.class-table tr:nth-child(7) td:nth-child(2)').removeClass('active');
+
+
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
