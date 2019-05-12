@@ -1,0 +1,1466 @@
+ // Author: Caoimhe Malone (key-vah) 
+
+// Colours
+$green: #a9e20e;
+$white: #fff;
+$dark-grey: #343a40;
+
+.grey {
+  color: $dark-grey !important;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1em;
+  font-family: 'PT Sans Narrow', sans-serif !important; //Override bootstrap h1 inherit
+  position: absolute;
+  z-index: 2;
+  float: right;
+  right: 0;
+  color: $white!important; //Override bootstrap color inherit
+}
+.membership-option {
+	padding: 2em;
+	//border: 2px black;
+  //border-style: dotted;
+  background-color: $dark-grey;
+  color: $white;
+  height: 100%;
+
+  &:hover {
+    background-color: $green;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+
+    .membership-price {
+      color: #fff;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    height: 15%;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .membership-price {
+    text-align: center;
+    font-size: 1.5rem;
+    color: $green;
+    font-family:AvenirNextRegular,Arial,sans-serif;
+  }
+
+  img {
+    width: 100%;
+    padding-left: 37.5%;
+    padding-right: 37.5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .line-break {
+    text-align: center;
+  }
+
+
+}
+
+.memberships {
+  button:focus {
+    outline: 1px  $dark-grey;
+    }
+}
+
+    .signUpBtn {
+    background-color: $dark-grey;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    color: $white;
+    text-decoration: none;
+    margin: 5%;
+    width: 90%;
+    border: 4px $dark-grey; /* can't see it but it's so on the hover the text position doesn't move */
+    border-style: solid;
+    &:hover {
+      cursor: pointer;
+      color: $green;
+      text-decoration: none;
+      background-color: $white;
+      border: 4px $green;
+      border-style: solid;
+      font-weight: bold;
+
+      a {
+        color: $green;
+      }
+    }
+
+    a {
+      color: $white;
+      display: inline-block;
+      width: 100%;
+
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+//So the scroll has a bit of padding
+#memberships, #team, #timetable, #about, #blog {
+  width: 100%;
+  height: 60px;
+}
+
+.rounded-circle, .team-overlay {
+  background-color: #fff;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20%; 
+  background-size: cover;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.rounded-circle {
+  position: relative;
+  z-index: 1;
+  border: 1px solid black;
+  margin: 0 auto;
+
+  &:hover {
+    z-index: -2;
+  }
+}
+
+
+.team-overlay {
+  position: absolute;
+  opacity: 0.5;
+    background-color: #000;
+    display: none;
+
+
+  &:hover {
+    cursor: pointer;
+    display: block;
+
+  }
+}
+
+.team-member {
+  margin-top: 5%;
+  text-align: center;
+
+
+  h3 {
+    font-size: 1rem;
+    padding-top: 1em;
+  }
+
+  p {
+    margin-top: 6%;
+
+    a {
+      color: $green;
+    }
+  }
+}
+
+.timetable {
+  height: 56em;
+
+.timetable-mobile {
+  display: none;
+}
+  .class-table {
+    background-color: $dark-grey;
+    color: $white;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    border-top: 8px solid $green;
+
+    span {
+      color: $green;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    th {
+      background-color: #232a35;
+    }
+
+    td {
+      border: 1px solid $white;
+      padding-top:2em;
+      padding-bottom: 2em;
+      width: 14.286%;
+    }
+  }
+
+}
+
+.schedule {
+  width: 50%;
+  height: 400%;
+  margin-left: 20%;
+}
+
+.schedule-mobile {
+  display: none;
+}
+
+.schedule-desktop {
+  display: block;
+   margin-left: 0%;
+  width: 100%;
+  height: 350%;
+}
+
+iframe {
+  #top-bar {
+    display: none !important;
+  }
+}
+
+.about {
+  //margin-top: 55%;
+}
+.contact-info {
+	padding-top: 2em;
+
+  .contact-title {
+    margin-left: 30%;
+  }
+}
+
+.contact-listing {
+    padding-left: 2em;
+    padding-right: 7em;
+    padding-top: 2em;
+
+  a {
+    color: $green;
+
+    &:hover {
+      color: $dark-grey;
+    }
+  }
+}
+
+.contact-form {
+    padding-left: 30%;
+}
+
+#contactForm {
+  margin-left: 30%;
+}
+
+.submit {
+	margin-left: 10%;
+}
+
+.blog-image {
+    border: 5px solid black;
+    //padding: 25px;
+    margin: 25px;
+
+    img {
+    	width: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+.blog {
+  a {
+    color: #000;
+
+    &:hover {
+      text-decoration: none;
+      color: #000; /*Overriding bootstrap */
+      font-weight: bold;
+
+      
+    }
+  }
+
+  .blog-preview {
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+
+.carousel {
+  padding-top: 3em;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  // &:nth-child(1) {
+  //   background-image: url('images/header-2.webp');
+  //   background-image: url('images/Bodynamics-86.jpg');
+  // }
+
+  // &:nth-child(2) {
+  //   background-image: url('images/header-1.webp');
+  //   background-image: url('images/Bodynamics-29.jpg');
+  // }
+
+  // &:nth-child(3) {
+  //   background-image: url('images/header-4.webp');
+  //   background-image: url('images/Bodynamics-7.jpg');
+  // }
+}
+
+.blog, .timetable {
+  background-image: url(../images/icon-collage.png);
+}
+
+.blog, .timetable {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+h3 {
+  //padding-top: 1.5em;
+}
+
+
+//For diagonal divs
+.edge--top {
+  position: relative;
+  z-index: 1;
+}
+.edge--top:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.edge--top:before {
+  top: 0;
+  -webkit-transform: skewY(5.5deg);
+          transform: skewY(5.5deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+.edge--top--reverse {
+  position: relative;
+  z-index: 1;
+}
+.edge--top--reverse:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+
+}
+.edge--top--reverse:before {
+  top: 0;
+  -webkit-transform: skewY(-5.5deg);
+          transform: skewY(-5.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+
+.white {
+  background-color: $white;
+}
+
+.dark-grey {
+  background-color: $dark-grey
+}
+
+
+h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+// input fields
+
+.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em;
+  max-width: 350px;
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+
+.input__field {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 60%;
+  border: none;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+  outline: none;
+}
+
+.input__label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  color: #6a7989;
+  font-weight: bold;
+  font-size: 70.25%;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input__label-content {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+
+.graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+}
+
+.icon {
+  color: #ddd;
+  font-size: 150%;
+}
+
+/* Madoka */
+.input--madoka {
+  margin: 1.1em;
+  padding-bottom: 2em;
+}
+
+.input__field--madoka {
+  width: 100%;
+  background: transparent;
+  color: #7A7593;
+}
+
+.input__label--madoka {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: $green;
+  text-align: left;
+  cursor: text;
+  padding-top:4em;
+}
+
+.input__label-content--madoka {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.graphic--madoka {
+  -webkit-transform: scale3d(1, -1, 1);
+  transform: scale3d(1, -1, 1);
+  -webkit-transition: stroke-dashoffset 0.3s;
+  transition: stroke-dashoffset 0.3s;
+  pointer-events: none;
+
+  stroke: $green;
+  stroke-width: 4px;
+  stroke-dasharray: 962;
+  stroke-dashoffset: 558;
+}
+
+.input__field--madoka:focus + .input__label--madoka,
+.input--filled .input__label--madoka {
+  cursor: default;
+  pointer-events: none;
+}
+
+.input__field--madoka:focus + .input__label--madoka .graphic--madoka,
+.input--filled .graphic--madoka {
+  stroke-dashoffset: 0;
+}
+
+.input__field--madoka:focus + .input__label--madoka .input__label-content--madoka,
+.input--filled .input__label-content--madoka {
+  -webkit-transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
+  transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
+}
+
+#submitBtn {
+  color: $white;
+  background-color: #343a40;
+  border-radius: 6px;
+  font-weight: bold;
+  width: 60%;
+  margin-top: 2em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// For scroll reveal 
+.reveal
+{
+    opacity:0;
+}
+
+//Scroll to top
+.scrollToTop {
+  button {
+    //background-color: $green;
+    position: fixed;
+    float:right;
+    right: 2%;
+    //background-image: url(../images/scroll2.png); 
+    bottom: 1%;
+    background-repeat: no-repeat;
+    z-index: 3;
+    color: $green;
+    text-decoration: none;
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-color: #000 4px solid;
+    display: block;
+    //width: 2.5%;
+    font-size: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  button:focus {
+    outline: 1px  $green;
+  }
+  
+
+  a {
+    color: #000;
+  }
+  a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+
+//Nav X animation 
+
+$radius: 50px;
+
+.hamburgler{
+    width: 2em;
+    height: 2em;
+    display: block;
+    transition: .3s ease all;
+
+    &.no-hamburgler{
+        transform: rotate(-45deg);
+    }
+}
+
+.bun,
+.meat{
+    display: block;
+    width: 100%;
+    background: $green;
+    height: 20%;
+    transition: .3s ease all;
+    border-radius: $radius;
+}
+
+.top{
+     .no-hamburgler & {
+        height: 38%;
+        width: 20%;
+        margin-left: 40%;
+        border-radius: $radius $radius 0 0;
+    }
+}
+
+.bottom{
+    .no-hamburgler & {
+        height: 38%;
+        width: 20%;
+        margin-left: 40%;
+        border-radius: 0 0 $radius $radius;
+    }
+}
+
+.meat{
+    margin: 20% 0;
+    
+    .no-hamburgler &{
+        margin: 2% 0;
+
+    }
+}
+
+.navbar {
+  .hamburgerBtn:focus {
+    outline: none;
+  }
+
+  .navbar-brand {
+    width: 10%;
+    padding-top: 0.2em;
+    padding-bottom:0.2em;
+    img {
+      width:100%;
+    }
+  }
+
+  .nav-item :hover {
+    cursor: pointer;
+  }
+
+  .signUpBtn {
+    background-color: $green;
+    border-radius: 6px;
+    border-color: $green;
+    padding: 0.5em 1em;
+    color: $dark-grey;
+    text-decoration: none;
+    margin-left: 1em;
+    &:hover {
+      cursor: pointer;
+      color: $white;
+      text-decoration: none; 
+    }
+  }
+}
+
+footer {
+  .icon-footer {
+    font-size: 0.5rem;
+  }
+
+  .social-bar {
+  color: black;
+  padding: 0;
+
+    img {
+      width: 33%;
+    }
+  }
+
+  ul {
+    margin-left: 15em;
+    margin-right: 15em;
+    justify-content: center;
+    display: flex;
+  }
+
+  li {
+    display: table-cell;
+
+    a {
+      padding-left: 33%;
+      padding-right: 33%;
+    }
+  }
+}
+
+
+
+
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//Media Queries 
+
+//Normal Phone 
+
+@media (max-width: 767px) {
+
+  .navbar {
+    .navbar-brand {
+      width: 18%;
+      padding: 0;
+    }
+  }
+
+  .timetable {
+    .timetable-mobile {
+      display: block;
+
+      td {
+        display: none;
+      }
+
+      .active {
+        display: inline-block;
+      }
+    }
+
+    .timetable-desktop {
+      display: none;
+    }
+
+    .class-table {
+      td {
+        width: 100%;
+      }
+      ul {
+        padding: 0;
+
+        .active {
+          display: block;
+        }
+
+        li {
+          display: none;
+        }
+      }
+    }
+
+      .timetable-bottom-nav {
+        background-color: #232a35;
+        width: 100%;
+        color: $white;
+        height: 3em;
+
+        ul {
+          padding: 0.5em 0.3em 0 0.3em;
+          width: 100%;
+          margin-bottom: 0;
+          height: 100%;
+          
+        }
+
+        li {
+          display: inline-block;
+          background-color: $green;
+          border-radius: 5px 5px 0 0;
+          line-height: 0.5em;
+          height: 100%;
+          border-style: none;
+          width: 13.25%;
+          overflow: hidden;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        hr {
+          background-color: $green;
+          width: 100%;
+          height: 0.5em;
+          margin: 0;
+          padding: 0;
+          z-index: 2;
+          position: relative;
+          border-top: none;
+        }
+
+      }
+
+      .navbar {
+        padding: 0;
+        a {
+          float: left;
+          // display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 1em 0.5em;
+          text-decoration: none;
+          font-size: 0.9rem;
+          width: 100%;
+        }
+
+        .active {
+          background-color: #232a35;
+          color: white;
+        }
+
+        
+
+      }
+    
+  }
+
+
+    footer {
+    ul {
+      padding-right: 1em;
+      padding-left: 1em;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+//Random
+@media (min width: 569px) and (max-width: 767px) {
+  .scrollToTop {
+    button {
+      bottom: 4%;
+      right: 3%;
+      padding-right: 3.2%;
+    }
+  }
+  .timetable {
+    height: 36em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px ){
+  .scrollToTop {
+    button {
+      bottom: 4%;
+      right: 3%;
+      //padding-right: 2.5%;
+    }
+  }
+
+}
+
+
+//Everything under a laptop 
+@media (max-width: 991px) {
+  .submit {
+    padding-top: 2em;
+  }
+
+  #submitBtn {
+    margin-top: 2em;
+    width: 80%;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .navbar {
+    .signUpBtn {
+      margin-left: 0;
+    }
+
+    ul {
+      margin-bottom: 2em;
+    }
+
+    .signUpNav {
+      margin-bottom: 2em;
+    }
+
+
+  }
+
+  .blog {
+    background-size: 35em;
+  }
+
+  .blog, .timetable {
+    background-attachment: unset;
+    background-repeat: repeat;
+  }
+
+
+}
+
+ /* ----------- Tablets ----------- */
+
+@media (max-width: 1000px) {
+  .schedule {
+  height: 300%;
+  width: 80%;
+}
+
+  .about {
+    //padding-top: 20%;
+  }
+
+  #memberships, #team, #timetable, #blog {
+   height: 70px;
+  }
+
+  #contactForm {
+    margin-left: 0;
+  }
+
+}
+
+@media  (min-width: 992px) and (max-width:1024px) {
+  .scrollToTop {
+    button {
+      bottom: 3%;
+      right: 3%;
+      padding-right: 0.9%;
+    }
+  }
+
+}
+
+ /* ----------- Laptop & large tablets ----------- */
+
+@media  (min-width: 1024px) {
+    #memberships, #team, #timetable, #about, #blog {
+      height: 82px;
+  }
+
+  #submitBtn {
+    width: 80%;
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+
+  }
+
+  //Large Laptop
+   @media only screen 
+and (min-width : 1025px) 
+and (max-width : 1440px) {
+  .scrollToTop button {
+    padding-right: 1%;
+    width: 2.5%;
+  }
+}
+
+// 4K Monitor
+   @media only screen 
+and (min-width : 1441px)  {
+  .scrollToTop button {
+    padding-right: 1.25%;
+    width: 1.15%;
+  }
+}
+
+
+  /* ----------- iPad ----------- */
+
+//Anything under an ipad
+  @media only screen 
+and (max-device-width : 1023px)  { 
+
+    .schedule-desktop {
+    display: none;
+  }
+
+  .schedule-mobile {
+    display: block;
+  }
+
+  .membership-option {
+    margin-bottom: 2em;
+    height: 99%;
+
+    .line-break {
+      font-size: 55%;
+    }
+
+  }
+}
+
+ @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px)  {
+
+  footer {
+    ul {
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 8em;
+      padding-left: 8em;
+    }
+  }
+
+  }
+
+
+  /* ----------- iPad Mini ----------- */
+
+  /* iPad Mini in portrait & landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) { 
+  .schedule {
+    margin-left: 10%;
+  }
+}
+
+/* iPad Mini in landscape only */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { /* STYLE */}
+
+/* iPad Mini in portrait only */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { /* STYLE */ }
+
+
+  /* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .membership-option {
+      .line-break {
+        font-size: 72%;
+      }
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  .scrollToTop {
+    button {
+      bottom: 5%;
+      right: 5%;
+      //padding-right: 3.75%;
+    }
+  }
+
+  .timetable {
+    height: 36em;
+  }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .membership-option {
+      .line-break {
+        font-size: 100%;
+      }
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+  .scrollToTop {
+    button {
+      bottom: 4%;
+      right: 5%;
+      //padding-right: 5%;
+    }
+  }
+
+  .timetable {
+    height: 42em;
+
+    .container {
+      //padding-right: 0px;
+      //padding-left: 0px;
+      padding-top: 2em;
+    }
+  }
+
+    .schedule {
+      margin-left: 0%;
+      width: 100%;
+      height: 350%;
+    }
+  
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .timetable {
+    height: 44em;
+  }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+  .scrollToTop {
+    button {
+      padding-right: 3%;
+    }
+  }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+  .scrollToTop {
+    button {
+      bottom: 4%;
+      padding-right: 2%;
+    }
+  }
+
+  .timetable {
+    height: 49em;
+  }
+
+  #contactForm {
+  margin-left: 0;
+}
+
+  .contact-info {
+    .contact-title {
+    margin-left: 0;
+    padding-top: 2em;
+    }
+
+  }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- Galaxy S3 ----------- */
+
+// /* Portrait and Landscape */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 2) {
+
+// }
+
+// /* Portrait */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 2) 
+//   and (orientation: portrait) {
+
+// }
+
+// /* Landscape */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 2) 
+//   and (orientation: landscape) {
+
+// }
+
+ /* ----------- Galaxy Note 2 ----------- */
+
+ /*  Galaxy Note2 - Portrait */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and  (max-device-height: 640px) and (orientation: portrait) {
+    
+    .schedule {
+      margin-left: 10%;
+    }
+
+}
+
+
+
+// /* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) {
+
+//     .schedule {
+//       margin-left: 10%;
+//     }
+
+// }
+
+// /* Portrait */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) 
+//   and (orientation: portrait) {
+
+// }
+
+// /* Landscape */
+// @media screen 
+//   and (device-width: 320px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) 
+//   and (orientation: landscape) {
+
+// }
+
+// /* ----------- Galaxy S6 ----------- */
+
+// /* Portrait and Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) {
+
+// }
+
+// /* Portrait */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) 
+//   and (orientation: portrait) {
+
+// }
+
+// /* Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) 
+//   and (orientation: landscape) {
+
+// }
+
+// /* ----------- Google Pixel ----------- */
+
+// /* Portrait and Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) {
+
+// }
+
+// /* Portrait */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) 
+//   and (orientation: portrait) {
+
+// }
+
+// /* Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 3) 
+//   and (orientation: landscape) {
+
+// }
+
+// /* ----------- Google Pixel XL ----------- */
+
+// /* Portrait and Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) {
+
+// }
+
+// /* Portrait */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) 
+//   and (orientation: portrait) {
+// }
+
+// /* Landscape */
+// @media screen 
+//   and (device-width: 360px) 
+//   and (device-height: 640px) 
+//   and (-webkit-device-pixel-ratio: 4) 
+//   and (orientation: landscape) {
+
+// }
+
+
+//Bootstrap overrides
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.timetable {
+  .col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.container {
+  h3 {
+    font-family: AvenirNextRegular,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 10;
+    letter-spacing: 1px;
+  }
+}
+
+.navbar-toggler {
+  border-color: #343a40 !important;
+}
