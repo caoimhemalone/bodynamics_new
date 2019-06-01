@@ -8,19 +8,19 @@
 		          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 		        </ol>
 		        <div class="carousel-inner" role="listbox">
-		          <div class="carousel-item active" style="background-image: url('images/Bodynamics-86.jpg');    ">
+		          <div class="carousel-item active" style="background-image: url('images/Bodynamics-72.jpg');    ">
 		            <div class="carousel-caption d-none d-md-block">
 		              <!-- <h3>First Slide</h3> -->
 		              <h3>Outstanding Training Facilities</h3>
 		            </div>
 		          </div>
-		          <div class="carousel-item" style="background-image: url('images/Bodynamics-29.jpg');    ">
+		          <div class="carousel-item" style="background-image: url('images/Bodynamics-105.jpg');    ">
 		            <div class="carousel-caption d-none d-md-block">
 		              <!-- <h3>Second Slide</h3> -->
 		              <h3>Killer Workouts, Watch Fat Burn Right Off</h3>
 		            </div>
 		          </div>
-		          <div class="carousel-item" style="background-image: url('images/Bodynamics-7.jpg');">
+		          <div class="carousel-item" style="background-image: url('images/Bodynamics-120.jpg');">
 		            <div class="carousel-caption d-none d-md-block">
 		              <!-- <h3>Third Slide</h3> -->
 		              <h3>Friendly, Encouraging Trainers</h3>
@@ -617,14 +617,42 @@
 
 				</div>
 				
-				<div class="testomonials">
-					<div class="container">
-						
-					</div>
-				</div>
 
 				<div class=" white edge--top">
 					<div id="about"></div>
+
+					<div class="testomonials" style="display: none">
+						<div class="container">
+							<div class="row">
+								<h2>Testimonials</h2>
+								<div class="col-md-4">
+									<blockquote>
+										Excellent Gym, Friendly Trainers & Guaranteed Results
+									</blockquote>
+									- Steven O'Shaughnessy
+								</div>
+								<div class="col-md-4">
+									<blockquote>
+										
+									Excellent place to train with great classes and trainers
+									</blockquote>
+									- Ann St Leger
+									
+								</div>
+								<div class="col-md-4">
+									<blockquote>
+										
+									Great space, great trainers. Very friendly & professional
+									</blockquote>
+									- Jamie Taylor
+									
+									
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
 					<div class="about" style="padding-bottom: 2em;">
 						<div class="container">
 							<h3 class="reveal">About Us</h3>

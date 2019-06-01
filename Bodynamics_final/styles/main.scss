@@ -1464,3 +1464,14 @@ and (orientation : portrait) { /* STYLE */ }
 .navbar-toggler {
   border-color: #343a40 !important;
 }
+
+.testimonials {
+  h2::before, h2::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background: #000;
+    margin: 0 .5em .25em 0;
+  }
+}
