@@ -12,6 +12,6 @@ Project Title: Bodynamics new 2018
 
 Author: Caoimhe Malone (keyvah)
 
-Status: Development
+Status: Live
 
 Site url: www.bodynamics.ie
