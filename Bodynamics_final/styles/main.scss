@@ -20,13 +20,17 @@ $dark-grey: #343a40;
 h1 {
   text-transform: capitalize;
   text-align: center;
-  padding: 1em;
   font-family: 'PT Sans Narrow', sans-serif !important; //Override bootstrap h1 inherit
   position: absolute;
   z-index: 2;
   float: right;
   right: 0;
   color: $white!important; //Override bootstrap color inherit
+  font-size: 32px;
+  border-radius: 18px;
+  background-color: rgba(0,0, 0, 0.4);
+  padding: 0.6em;
+  margin-top: 1em;
 }
 .membership-option {
 	padding: 2em;
@@ -184,7 +188,7 @@ h1 {
 }
 
 .timetable {
-  height: 56em;
+  height: 66em;
 
 .timetable-mobile {
   display: none;
@@ -867,8 +871,10 @@ footer {
   }
 }
 
+
+
 //Random
-@media (min width: 569px) and (max-width: 767px) {
+@media (min-width: 569px) and (max-width: 767px) {
   .scrollToTop {
     button {
       bottom: 4%;
@@ -877,7 +883,7 @@ footer {
     }
   }
   .timetable {
-    height: 36em;
+    height: 46em;
   }
 }
 
@@ -1098,8 +1104,8 @@ and (orientation : portrait) { /* STYLE */ }
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
+  and (min-width: 320px) 
+  and (max-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
     .membership-option {
@@ -1107,7 +1113,6 @@ and (orientation : portrait) { /* STYLE */ }
         font-size: 72%;
       }
     }
-
 }
 
 /* Portrait */
@@ -1122,10 +1127,15 @@ and (orientation : portrait) { /* STYLE */ }
       right: 5%;
       //padding-right: 3.75%;
     }
-  }
 
-  .timetable {
-    height: 36em;
+    .timetable {
+       height: 56em;
+      .timetable-bottom-nav {
+        li {
+          width: 13% !important;
+        }
+      }
+    }
   }
 }
 
@@ -1167,7 +1177,7 @@ and (orientation : portrait) { /* STYLE */ }
   }
 
   .timetable {
-    height: 42em;
+    height: 52em;
 
     .container {
       //padding-right: 0px;
@@ -1202,7 +1212,7 @@ and (orientation : portrait) { /* STYLE */ }
   and (-webkit-min-device-pixel-ratio: 3) { 
 
     .timetable {
-    height: 44em;
+    height: 54em;
   }
 
 }
@@ -1256,7 +1266,7 @@ and (orientation : portrait) { /* STYLE */ }
   }
 
   .timetable {
-    height: 49em;
+    height: 59em;
   }
 
   #contactForm {

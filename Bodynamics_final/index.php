@@ -1,7 +1,17 @@
 <?php include("header.php");?>
+
+<!-- <style type="text/css">
+	h1 {
+		font-size: 32px;
+		border-radius: 18px;
+		background-color: rgba(0,0, 0, 0.4);
+		padding: 0.6em;
+		margin-top: 1em;
+	}
+</style> -->
 <header>
 		      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		      	<h1>Bodynamics - Keeping Dublin Fit </h1>
+		      	<h1>Bodynamics - Your Body, Your Life, Your Gym </h1>
 		        <ol class="carousel-indicators">
 		          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 		          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -38,7 +48,7 @@
 		      </div>
 		  </header>
 
-		      <div class="scrollToTop">
+		      <div class="scrollToTop" style="display: none;">
 		      	<a href="#top"><button> ↑ </button></a>
 		      </div>
 
@@ -162,15 +172,6 @@
 					<div class="container">
 					<h3 class="reveal">Timetable</h3>
 
-						<!-- <div class="row">
-							<div class="col-md-12">
-								<iframe class="schedule schedule-mobile" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTeW3ug1IdkDoVDRjmVv1zGmHnr2wJwwdCVADj5Tjg4RqeUskYdppJepQ7pODDz51Rc9wv8e2KglGKn/pubhtml?widget=true&amp;" width="100%" height="460" style="embed"></iframe>
-							</div>
-							<div class="col-md-12">
-								<iframe class="schedule schedule-desktop" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRtv_R4QCX7V5oHMvob3YYvRLQ996xrhof0gynTVGiMuaZWE3mI-y1M0KNEcT8c1S34q2CG1ljhybP6/pubhtml?widget=true&amp;headers=false" width="100%" height="360" style="embed"></iframe>
-							</div>
-						</div> -->
-
 					<div class="timetable-desktop">
 						<table class="class-table">
 							<tr>
@@ -213,7 +214,8 @@
 
 								</td>
 								<td>
-									
+									<h4> Disco Spin</h4>
+									<span>6am-7am</span>
 
 								</td>
 								<td>
@@ -364,6 +366,34 @@
 								
 							</tr>
 
+							<tr id="8-9pm">
+								<td>
+										
+								</td>
+								<td>
+									<h4>Olympic Lifting</h4>
+									<span>8pm-9pm</span>
+									
+								</td>
+								<td>
+									
+								</td>
+								<td>
+									
+								</td>
+								<td>
+									
+								</td>
+								<td>
+									
+								</td>
+								<td>
+									<h4>Closed</h4>
+									
+								</td>
+								
+							</tr>
+
 
 							
 						</table>
@@ -412,8 +442,8 @@
 
 								</td>
 								<td>
-									<h4 class="grey">Free</h4>
-									<span class="grey">0pm-0pm</span>
+									<h4> Disco Spin</h4>
+									<span>6am-7am</span>
 									
 
 								</td>
@@ -579,6 +609,41 @@
 								
 							</tr>
 
+							<tr id="8-9pm">
+								<td class="active">
+									<h4 class="grey">Free</h4>
+									<span class="grey">0pm-0pm</span>
+								</td>
+								<td>
+									<h4>Olympic Lifting</h4>
+									<span>8pm-9pm</span>
+									
+								</td>
+								<td>
+									<h4 class="grey">Free</h4>
+									<span class="grey">0pm-0pm</span>
+								</td>
+								<td>
+									<h4 class="grey">Free</h4>
+									<span class="grey">0pm-0pm</span>
+								</td>
+								<td>
+									<h4 class="grey">Free</h4>
+									<span class="grey">0pm-0pm</span>
+									
+								</td>
+								<td>
+									<h4 class="grey">Free</h4>
+									<span class="grey">0pm-0pm</span>
+									
+								</td>
+								<td>
+									<h4>Closed</h4>
+									<span class="grey">0pm-0pm</span>
+									
+								</td>
+								
+							</tr>
 
 							
 						</table>
@@ -621,30 +686,80 @@
 				<div class=" white edge--top">
 					<div id="about"></div>
 
-					<div class="testomonials" style="display: none">
+					<style type="text/css">
+						@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+						blockquote{
+						  font-size: 1.4em;
+						  width:100%;
+						  height: 12em;
+						  margin:0;
+						  font-family:Open Sans;
+						  font-style:italic;
+						  color: #555555;
+						  padding:1.2em 30px 1.2em 75px;
+						  border-left:8px solid #343a40 ;
+						  line-height:1.6;
+						  position: relative;
+						  background:#EDEDED;
+						}
+						@media only screen and (max-device-width: 991px) {
+							blockquote {
+								margin-bottom: 0.5em;
+							}
+						}
+
+						blockquote::before{
+						  font-family:Arial;
+						  content: "\201C";
+						  color:#a9e20e;
+						  font-size:4em;
+						  position: absolute;
+						  left: 10px;
+						  top:-10px;
+						}
+
+						blockquote::after{
+						  content: '';
+						}
+
+						blockquote span{
+						  display:block;
+						  color:#333333;
+						  font-style: normal;
+						  font-weight: bold;
+						  margin-top:1em;
+						}
+
+					</style>
+
+					<div class="testomonials" style="margin-bottom: 2.5em;">
 						<div class="container">
+							<h3 class="reveal">TESTIMONIALS</h3>
 							<div class="row">
-								<h2>Testimonials</h2>
+								
 								<div class="col-md-4">
-									<blockquote>
-										Excellent Gym, Friendly Trainers & Guaranteed Results
-									</blockquote>
-									- Steven O'Shaughnessy
-								</div>
-								<div class="col-md-4">
-									<blockquote>
+										<blockquote>
+											Excellent Gym, Friendly Trainers & Guaranteed Results
 										
-									Excellent place to train with great classes and trainers
-									</blockquote>
-									- Ann St Leger
+										<span>Steven O'Shaughnessy</span>
+										</blockquote>
+								</div>
+								<div class="col-md-4 ">
+										<blockquote>
+											
+										Excellent place to train with great classes and trainers
+										
+										<span>Ann St Leger</span>
+										</blockquote>
 									
 								</div>
 								<div class="col-md-4">
-									<blockquote>
+										<blockquote>
+											
+										Great space, great trainers. Very friendly & professional
 										
-									Great space, great trainers. Very friendly & professional
-									</blockquote>
-									- Jamie Taylor
+										<span>Jamie Taylor</span>
+										</blockquote>
 									
 									
 								</div>
@@ -658,11 +773,11 @@
 							<h3 class="reveal">About Us</h3>
 							<div class="about-info">
 							
-								<p>Bodynamics is Dublin's top fitness gym located on the Northside. With outstanding facilities, Bodynamics shapes the health and fitness lifestyles of people from many ages, shapes and sizes.</p>
+								<p>Bodynamics is a high-spec community oriented gym, based on Dublin's Northside. </p>
 
-								<p>With a wide range of classes on daily and Personal Training sessions the weight loss results from customers have been outstanding</p>
+								<p>At Bodynamics, our focus is on each individual client and tailoring eash session and plan to suit them.</p>
 
-								<p>So whether you're looking to bulk up, lose weight or just keep fit join the team at bodynamics in Santry for a workout.</p>
+								<p>We offer a wide range og packages from 'Bootcamp' classes, small group personal training to 1on1 and 2on1 sessions.</p>
 							</div>
 							<div class="contact-info">
 								<h5 class="reveal">Contact Information</h5>
