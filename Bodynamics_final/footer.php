@@ -42,12 +42,11 @@
 
 	      </div>
 	    </footer>
+
 <!-- Bootstrap core JavaScript -->
 <script src="Bootstrap/vendor/jquery/jquery.min.js"></script>
 <script src="Bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- custom JS -->
-<script type="text/javascript" src="scripts/built.min.js"></script>
 <!-- For medium post embedding -->
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
@@ -56,7 +55,18 @@
 <script>
 AOS.init();
 </script>
+<!-- custom JS -->
+<script type="text/javascript" src="built.min.js"></script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+        <script>    
+        // Set the options to make LazyLoad self-initialize 
+        var myLazyLoad = new LazyLoad({
+            data_src: "src"
+        });
+        window.lazyLoadOptions = {  
+            elements_selector: ".lazyload",  
+        };
+    </script>
   </body>
 </html>

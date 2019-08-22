@@ -3,6 +3,14 @@
 <html lang="en">
 
   <head>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W5G6FZG');</script>
+    <!-- End Google Tag Manager -->
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,7 +37,9 @@
     <!-- For fade in -->
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
+     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+     
      <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139553932-1"></script>
       <script>
@@ -40,19 +50,23 @@
         gtag('config', 'UA-139553932-1');
       </script>
 
-
     
   </head>
 
 
     <body>
 
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5G6FZG"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
     <div id="home"></div>
 
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" alt="nav">
       <div class="container ">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img alt="logo image"src="images/logo.png" alt="Bodynamics"/>
         </a>
             <button id="nav-toggle" class="navbar-toggler hamburgerBtn" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +95,10 @@
               <a  class="nav-link" id="aboutNav">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="blogNav">Blog</a>
+              <a class="nav-link" id="galleryNav" href="/gallery.php">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="blogNav" href="/blog">Blog</a>
             </li>
             
           </ul>

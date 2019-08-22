@@ -615,6 +615,46 @@ h1 {
   }
 }
 
+//Gallery
+.gallery {
+  margin-top: 6em;
+  margin-bottom: 3em;
+  
+  .project-media{
+    img {
+      width: 100%;
+      margin-top: 1em;
+    }
+  }
+}
+
+.caoimhe { 
+  a{
+    color: #a9e20e;
+  }
+
+  span {
+    padding: 2em;
+    background-color: #b0b0b0;
+    color: #343a40;
+    display: block;
+    width: 40%;
+    text-align: center;
+  }
+
+  .card-icon {
+    font-size: 2.2em;
+  } 
+
+  .photographer-card {
+    margin-bottom: 1em;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 20%;
+    margin-top: 1em;
+  }
 
 //Nav X animation 
 
