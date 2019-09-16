@@ -80,8 +80,6 @@ h1 {
   .line-break {
     text-align: center;
   }
-
-
 }
 
 .memberships {
@@ -90,41 +88,40 @@ h1 {
     }
 }
 
-    .signUpBtn {
-    background-color: $dark-grey;
-    border-radius: 6px;
-    padding: 0.5em 1em;
-    color: $white;
+.signUpBtn {
+  background-color: $dark-grey;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  color: $white;
+  text-decoration: none;
+  margin: 5%;
+  width: 90%;
+  border: 4px $dark-grey; /* can't see it but it's so on the hover the text position doesn't move */
+  border-style: solid;
+  &:hover {
+    cursor: pointer;
+    color: $green;
     text-decoration: none;
-    margin: 5%;
-    width: 90%;
-    border: 4px $dark-grey; /* can't see it but it's so on the hover the text position doesn't move */
+    background-color: $white;
+    border: 4px $green;
     border-style: solid;
-    &:hover {
-      cursor: pointer;
-      color: $green;
-      text-decoration: none;
-      background-color: $white;
-      border: 4px $green;
-      border-style: solid;
-      font-weight: bold;
-
-      a {
-        color: $green;
-      }
-    }
+    font-weight: bold;
 
     a {
-      color: $white;
-      display: inline-block;
-      width: 100%;
-
-
-      &:hover {
-        color: $green;
-      }
+      color: $green;
     }
   }
+
+  a {
+    color: $white;
+    display: inline-block;
+    width: 100%;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
 
 //So the scroll has a bit of padding
 #memberships, #team, #timetable, #about, #blog {
@@ -190,9 +187,9 @@ h1 {
 .timetable {
   height: 66em;
 
-.timetable-mobile {
-  display: none;
-}
+  .timetable-mobile {
+    display: none;
+  }
   .class-table {
     background-color: $dark-grey;
     color: $white;
@@ -221,7 +218,6 @@ h1 {
       width: 14.286%;
     }
   }
-
 }
 
 .schedule {
@@ -247,9 +243,6 @@ iframe {
   }
 }
 
-.about {
-  //margin-top: 55%;
-}
 .contact-info {
 	padding-top: 2em;
 
@@ -285,17 +278,17 @@ iframe {
 }
 
 .blog-image {
-    border: 5px solid black;
-    //padding: 25px;
-    margin: 25px;
+  border: 5px solid black;
+  //padding: 25px;
+  margin: 25px;
 
-    img {
-    	width: 100%;
-    }
+  img {
+  	width: 100%;
+  }
 
-    &:hover {
-      cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .blog {
@@ -319,8 +312,6 @@ iframe {
 }
 
 
-
-
 .carousel {
   padding-top: 3em;
 }
@@ -334,20 +325,11 @@ iframe {
   -o-background-size: cover;
   background-size: cover;
 
-  // &:nth-child(1) {
-  //   background-image: url('images/header-2.webp');
-  //   background-image: url('images/Bodynamics-86.jpg');
-  // }
-
-  // &:nth-child(2) {
-  //   background-image: url('images/header-1.webp');
-  //   background-image: url('images/Bodynamics-29.jpg');
-  // }
-
-  // &:nth-child(3) {
-  //   background-image: url('images/header-4.webp');
-  //   background-image: url('images/Bodynamics-7.jpg');
-  // }
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 }
 
 .blog, .timetable {
@@ -359,11 +341,6 @@ iframe {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-
-}
-
-h3 {
-  //padding-top: 1.5em;
 }
 
 
@@ -568,9 +545,8 @@ h1 {
 }
 
 // For scroll reveal 
-.reveal
-{
-    opacity:0;
+.reveal {
+    opacity: 0;
 }
 
 //Scroll to top
@@ -616,15 +592,32 @@ h1 {
 }
 
 //Gallery
-.gallery {
-  margin-top: 6em;
-  margin-bottom: 3em;
-  
-  .project-media{
+.gallery-page {
+  section {
+    margin-top: 6em;
+    margin-bottom: 3em;
+  }
+
+  .project-media {
     img {
       width: 100%;
       margin-top: 1em;
     }
+  }
+}
+.gallery {
+  // margin-top: 6em;
+  // margin-bottom: 3em;
+  
+  // .project-media{
+  //   img {
+  //     width: 100%;
+  //     margin-top: 1em;
+  //   }
+  // }
+
+  h2 {
+    margin-top: 2.5em;
   }
 }
 
@@ -640,6 +633,10 @@ h1 {
     display: block;
     width: 40%;
     text-align: center;
+
+    @media only screen and (max-width: 991px){
+      width: 100%;
+    }
   }
 
   .card-icon {
@@ -654,7 +651,12 @@ h1 {
     border-radius: 50%;
     width: 20%;
     margin-top: 1em;
+
+    @media only screen and (max-width: 991px){
+      width: 30%;
+    }
   }
+}
 
 //Nav X animation 
 
@@ -954,7 +956,7 @@ footer {
 
   .navbar {
     .signUpBtn {
-      margin-left: 0;
+      margin: 0;
     }
 
     ul {
@@ -964,8 +966,6 @@ footer {
     .signUpNav {
       margin-bottom: 2em;
     }
-
-
   }
 
   .blog {
