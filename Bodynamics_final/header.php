@@ -13,7 +13,8 @@
     <!-- End Google Tag Manager -->
     
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bodynamics is a popular gym in North Dublin, Ireland">
     <meta name="title" content="Bodynamics">
     <meta name="author" content="Caoimhe Malone">
@@ -95,7 +96,7 @@
               <a  class="nav-link" id="aboutNav">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="galleryNav" href="/gallery.php">Gallery</a>
+              <a class="nav-link" id="galleryNav" href="/gallery">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="blogNav" href="/blog">Blog</a>

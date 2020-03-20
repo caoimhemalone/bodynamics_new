@@ -1,14 +1,46 @@
 <?php include("header.php");?>
 
-<!-- <style type="text/css">
+<style type="text/css">
 	h1 {
 		font-size: 32px;
 		border-radius: 18px;
 		background-color: rgba(0,0, 0, 0.4);
 		padding: 0.6em;
-		margin-top: 1em;
+		margin-top: 10%;
 	}
-</style> -->
+
+	.covid-19 {
+		background-color: yellow;
+		font-size: 18px;
+		display: flex;
+		margin-top: 6%;
+	}
+
+	@media only screen and (max-width: 767px) {
+		.covid-19 {
+			margin-top: 8%;
+		}
+	}
+
+	.covid-19 span {
+		display: block;
+		width: 100%;
+		padding: 8%;
+		align-self: center;
+	}
+
+	.covid-19 a {
+		color: #343a40;
+		font-size: 20px;
+	}
+
+	.carousel {
+		padding-top: 0;
+	}
+</style>
+<section class="covid-19">
+	<span>Due to the outbreak of the Corona Virus we have decided to close until further notice. To keep up to date with the status of the gym and for at home workout follow us on <a href="https://www.instagram.com/bodynamicsfitness" target="_blank">Instagram</a></span>
+</section>
 <header>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   	<h1>Bodynamics - Your Body, Your Life, Your Gym </h1>
