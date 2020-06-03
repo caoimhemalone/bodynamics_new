@@ -32,6 +32,9 @@
 	.covid-19 a {
 		color: #343a40;
 		font-size: 20px;
+		background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+		-webkit-background-clip: text; 
+		-webkit-text-fill-color: transparent; 
 	}
 
 	.carousel {
@@ -39,7 +42,7 @@
 	}
 </style>
 <section class="covid-19">
-	<span>Due to the outbreak of the Corona Virus we have decided to close until further notice. To keep up to date with the status of the gym and for at home workout follow us on <a href="https://www.instagram.com/bodynamicsfitness" target="_blank">Instagram</a></span>
+	<span><b>COVID 19 UPDATE</b> Starting Monday June 8th we will be resuming classes outside. All health and safety measures will be taken. See timetable below for outdoor sessions. For updates keep an eye on our <a href="https://www.instagram.com/bodynamicsfitness" target="_blank">Instagram</a></span>
 </section>
 <header>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -204,8 +207,361 @@
 </div>
 </div> 
 
+<!-- Temporary Covid 19 Timetable -->
+<div id="timetable"></div>
+	<div class="timetable">
+		<div class="container">
+		<h3 class="reveal">Timetable</h3>
+
+		<div class="timetable-desktop">
+			<table class="class-table">
+				<tr>
+					<th>
+						Monday
+					</th>
+					<th>
+						Tuesday
+					</th>
+					<th>
+						Wednesday
+					</th>
+					<th>
+						Thursday
+					</th>
+					<th>
+						Friday
+					</th>
+					<th>
+						Saturday
+					</th>
+					<th>
+						Sunday
+					</th>
+				</tr>
+
+				<tr id="6-7am">
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>6am</span>
+					</td>
+					<td>
+						
+
+					</td>
+					<td>
+						<h4>Spin & Bells</h4>
+						<span>6am</span>
+
+					</td>
+					<td>
+					
+					</td>
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>6am</span>
+
+					</td>
+					<td>
+						
+
+					</td>
+					<td>
+						
+
+					</td>
+				</tr>
+
+
+				<tr id="9:30-10:30am">
+					<td>
+						
+					</td>
+					<td>
+						<h4>Spin & Bells</h4>
+						<span>9:30am</span>
+					</td>
+					<td>
+					
+					</td>
+					<td>
+						<h4>Endure</h4>
+						<span>9:30am</span>
+					</td>
+					<td>
+						<h4>RT24</h4>
+						<span>9:30am</span>
+					</td>
+					<td>
+						<h4>Strength</h4>
+						<span>9:30am</span>
+					</td>
+					<td>
+						
+						
+					</td>
+				</tr>
+
+
+				<tr id="5:30-6:30pm">
+
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						<h4>Endure</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						<h4>RT24</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+						
+					</td>
+				</tr>
+
+
+				<tr id="6-7pm">
+					<td>
+						<h4>Spin & Bells</h4>
+						<span>7pm</span>
+					</td>
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>7pm</span>
+						
+					</td>
+					<td>
+						<h4>Boxing</h4>
+						<span>7pm</span>
+					</td>
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>7pm</span>
+						
+					</td>
+					<td>
+						
+					</td>
+					<td>
+						
+					</td>
+					<td>
+						
+					</td>
+				</tr>		
+			</table>
+		</div>
+	</div>
+
+		<div class="timetable-mobile">
+			<table class="class-table">
+				<tr>
+					<!-- <th> -->
+				
+					<!-- </th> -->
+					<!-- <th>
+						<a>Tuesday</a>
+					</th>
+					<th>
+						<a>Wednesday</a>
+					</th>
+					<th>
+						<a>Thursday</a>
+					</th>
+					<th>
+						<a>Friday</a>
+					</th>
+					<th>
+						<a>Saturday</a>
+					</th>
+					<th>
+						<a>Sunday</a>
+					</th> -->
+				</tr>
+
+				<tr id="6-7am">
+					<td class="active">
+						<h4>Strength & Distancing</h4>
+						<span>6am</span>
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>6am</span>
+					</td>
+					<td>
+						<h4>Spin & Bells</h4>
+						<span>6am</span>
+
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>6am</span>
+					</td>
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>6am</span>
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>6am</span>
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>6am</span>
+					</td>
+				</tr>
+
+
+				<tr id="9:30-10:30am">
+					<td class="active">
+						<h4>No Class</h4>
+						<span>9:30am</span>
+					</td>
+					<td>
+						<h4>Spin & Bells</h4>
+						<span>9:30am</span>
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>9:30am</span>
+					</td>
+					<td>
+						<h4>Endure</h4>
+						<span>9:30am</span>
+					</td>
+					<td>
+						<h4>RT24</h4>
+						<span>9:30am</span>
+					</td>
+					<td>
+						<h4>Strength</h4>
+						<span>9:30am</span>
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>9:30am</span>
+					</td>
+				</tr>
+
+
+				<tr id="5:30-6:30pm">
+					<td class="active">
+						<h4>Strength & Distancing</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						<h4>Endure</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						<h4>RT24</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>6pm</span>
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>6pm</span>
+					</td>
+				</tr>
+
+
+				<tr id="6-7pm">
+					<td class="active">
+						<h4>Spin & Bells</h4>
+						<span>7pm</span>
+					</td>
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>7pm</span>
+						
+					</td>
+					<td>
+						<h4>Boxing</h4>
+						<span>7pm</span>
+					</td>
+					<td>
+						<h4>Strength & Distancing</h4>
+						<span>7pm</span>
+						
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>7pm</span>
+						
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>7pm</span>					
+					</td>
+					<td>
+						<h4>No Class</h4>
+						<span>7pm</span>
+					</td>
+				</tr>
+			</table>
+
+			<div class="navbar timetable-bottom-nav">
+						
+					<ul>
+						<li class="active">
+							<a id="monday" alt="Monday">Mon</a>
+						</li>
+						<li>
+							<a id="tuesday" alt="Tuesday">Tues</a>
+						</li>
+						<li>
+							<a id="wednesday" alt="Wednesday">Wed</a>
+						</li>
+						<li>
+							<a id="thursday" alt="Thursday">Thurs</a>
+						</li>
+						<li>
+							<a id="friday" alt="Friday">Fri</a>
+						</li>
+						<li>
+							<a id="saturday" alt="Saturday">Sat</a>
+						</li>
+						<li>
+							<a id="sunday" alt="Sunday">Sun</a>
+						</li> 
+					</ul>
+					<hr>
+				</div>
+			
+		</div>
+		</div>
+
+	</div>
+<!-- End of temp timetable -->
 	
-	<div id="timetable"></div>
+	<!-- <div id="timetable"></div>
 	<div class="timetable">
 		<div class="container">
 		<h3 class="reveal">Timetable</h3>
@@ -462,7 +818,7 @@
 					<th>
 						<a>Sunday</a>
 					</th> -->
-				</tr>
+				<!-- </tr>
 
 				<tr id="6-7am">
 					<td class="active">
@@ -718,7 +1074,7 @@
 		</div>
 		</div>
 
-	</div>
+	</div> -->
 	
 
 	<div class=" white edge--top">
