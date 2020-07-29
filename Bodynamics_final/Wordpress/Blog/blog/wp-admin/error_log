@@ -1,0 +1,1 @@
+[12-May-2019 19:06:07 UTC] PHP Warning:  fileperms(): stat failed for /home/bodynami/public_html/blog/index.php in /home/bodynami/public_html/blog/wp-admin/includes/file.php on line 1746
