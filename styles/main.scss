@@ -20,13 +20,17 @@ $dark-grey: #343a40;
 h1 {
   text-transform: capitalize;
   text-align: center;
-  padding: 1em;
   font-family: 'PT Sans Narrow', sans-serif !important; //Override bootstrap h1 inherit
   position: absolute;
   z-index: 2;
   float: right;
   right: 0;
   color: $white!important; //Override bootstrap color inherit
+  font-size: 32px;
+  border-radius: 18px;
+  background-color: rgba(0,0, 0, 0.4);
+  padding: 0.6em;
+  margin-top: 1em;
 }
 .membership-option {
 	padding: 2em;
@@ -76,8 +80,6 @@ h1 {
   .line-break {
     text-align: center;
   }
-
-
 }
 
 .memberships {
@@ -86,41 +88,40 @@ h1 {
     }
 }
 
-    .signUpBtn {
-    background-color: $dark-grey;
-    border-radius: 6px;
-    padding: 0.5em 1em;
-    color: $white;
+.signUpBtn {
+  background-color: $dark-grey;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  color: $white;
+  text-decoration: none;
+  margin: 5%;
+  width: 90%;
+  border: 4px $dark-grey; /* can't see it but it's so on the hover the text position doesn't move */
+  border-style: solid;
+  &:hover {
+    cursor: pointer;
+    color: $green;
     text-decoration: none;
-    margin: 5%;
-    width: 90%;
-    border: 4px $dark-grey; /* can't see it but it's so on the hover the text position doesn't move */
+    background-color: $white;
+    border: 4px $green;
     border-style: solid;
-    &:hover {
-      cursor: pointer;
-      color: $green;
-      text-decoration: none;
-      background-color: $white;
-      border: 4px $green;
-      border-style: solid;
-      font-weight: bold;
-
-      a {
-        color: $green;
-      }
-    }
+    font-weight: bold;
 
     a {
-      color: $white;
-      display: inline-block;
-      width: 100%;
-
-
-      &:hover {
-        color: $green;
-      }
+      color: $green;
     }
   }
+
+  a {
+    color: $white;
+    display: inline-block;
+    width: 100%;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
 
 //So the scroll has a bit of padding
 #memberships, #team, #timetable, #about, #blog {
@@ -184,11 +185,11 @@ h1 {
 }
 
 .timetable {
-  height: 56em;
+  height: 66em;
 
-.timetable-mobile {
-  display: none;
-}
+  .timetable-mobile {
+    display: none;
+  }
   .class-table {
     background-color: $dark-grey;
     color: $white;
@@ -217,7 +218,6 @@ h1 {
       width: 14.286%;
     }
   }
-
 }
 
 .schedule {
@@ -243,9 +243,6 @@ iframe {
   }
 }
 
-.about {
-  //margin-top: 55%;
-}
 .contact-info {
 	padding-top: 2em;
 
@@ -281,17 +278,17 @@ iframe {
 }
 
 .blog-image {
-    border: 5px solid black;
-    //padding: 25px;
-    margin: 25px;
+  border: 5px solid black;
+  //padding: 25px;
+  margin: 25px;
 
-    img {
-    	width: 100%;
-    }
+  img {
+  	width: 100%;
+  }
 
-    &:hover {
-      cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .blog {
@@ -315,8 +312,6 @@ iframe {
 }
 
 
-
-
 .carousel {
   padding-top: 3em;
 }
@@ -329,6 +324,12 @@ iframe {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 }
 
 .blog, .timetable {
@@ -340,11 +341,6 @@ iframe {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-
-}
-
-h3 {
-  //padding-top: 1.5em;
 }
 
 
@@ -549,9 +545,8 @@ h1 {
 }
 
 // For scroll reveal 
-.reveal
-{
-    opacity:0;
+.reveal {
+    opacity: 0;
 }
 
 //Scroll to top
@@ -596,6 +591,72 @@ h1 {
   }
 }
 
+//Gallery
+.gallery-page {
+  section {
+    margin-top: 6em;
+    margin-bottom: 3em;
+  }
+
+  .project-media {
+    img {
+      width: 100%;
+      margin-top: 1em;
+    }
+  }
+}
+.gallery {
+  // margin-top: 6em;
+  // margin-bottom: 3em;
+  
+  // .project-media{
+  //   img {
+  //     width: 100%;
+  //     margin-top: 1em;
+  //   }
+  // }
+
+  h2 {
+    margin-top: 2.5em;
+  }
+}
+
+.caoimhe { 
+  a{
+    color: #a9e20e;
+  }
+
+  span {
+    padding: 2em;
+    background-color: #b0b0b0;
+    color: #343a40;
+    display: block;
+    width: 40%;
+    text-align: center;
+
+    @media only screen and (max-width: 991px){
+      width: 100%;
+    }
+  }
+
+  .card-icon {
+    font-size: 2.2em;
+  } 
+
+  .photographer-card {
+    margin-bottom: 1em;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 20%;
+    margin-top: 1em;
+
+    @media only screen and (max-width: 991px){
+      width: 30%;
+    }
+  }
+}
 
 //Nav X animation 
 
@@ -798,6 +859,10 @@ footer {
           border-style: none;
           width: 13.25%;
           overflow: hidden;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
 
         hr {
@@ -848,8 +913,10 @@ footer {
   }
 }
 
+
+
 //Random
-@media (min width: 569px) and (max-width: 767px) {
+@media (min-width: 569px) and (max-width: 767px) {
   .scrollToTop {
     button {
       bottom: 4%;
@@ -858,7 +925,7 @@ footer {
     }
   }
   .timetable {
-    height: 36em;
+    height: 46em;
   }
 }
 
@@ -889,7 +956,7 @@ footer {
 
   .navbar {
     .signUpBtn {
-      margin-left: 0;
+      margin: 0;
     }
 
     ul {
@@ -899,8 +966,6 @@ footer {
     .signUpNav {
       margin-bottom: 2em;
     }
-
-
   }
 
   .blog {
@@ -927,7 +992,7 @@ footer {
     //padding-top: 20%;
   }
 
-  #memberships, #team, #timetable, #about, #blog {
+  #memberships, #team, #timetable, #blog {
    height: 70px;
   }
 
@@ -1079,8 +1144,8 @@ and (orientation : portrait) { /* STYLE */ }
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
+  and (min-width: 320px) 
+  and (max-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
     .membership-option {
@@ -1088,7 +1153,6 @@ and (orientation : portrait) { /* STYLE */ }
         font-size: 72%;
       }
     }
-
 }
 
 /* Portrait */
@@ -1103,10 +1167,15 @@ and (orientation : portrait) { /* STYLE */ }
       right: 5%;
       //padding-right: 3.75%;
     }
-  }
 
-  .timetable {
-    height: 36em;
+    .timetable {
+       height: 56em;
+      .timetable-bottom-nav {
+        li {
+          width: 13% !important;
+        }
+      }
+    }
   }
 }
 
@@ -1148,7 +1217,7 @@ and (orientation : portrait) { /* STYLE */ }
   }
 
   .timetable {
-    height: 42em;
+    height: 52em;
 
     .container {
       //padding-right: 0px;
@@ -1183,7 +1252,7 @@ and (orientation : portrait) { /* STYLE */ }
   and (-webkit-min-device-pixel-ratio: 3) { 
 
     .timetable {
-    height: 44em;
+    height: 54em;
   }
 
 }
@@ -1237,7 +1306,7 @@ and (orientation : portrait) { /* STYLE */ }
   }
 
   .timetable {
-    height: 49em;
+    height: 59em;
   }
 
   #contactForm {
@@ -1444,4 +1513,15 @@ and (orientation : portrait) { /* STYLE */ }
 
 .navbar-toggler {
   border-color: #343a40 !important;
+}
+
+.testimonials {
+  h2::before, h2::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background: #000;
+    margin: 0 .5em .25em 0;
+  }
 }
