@@ -27,7 +27,9 @@
 		width: 100%;
 		padding: 8%;
 		align-self: center;
+		text-align: center;
 	}
+
 
 	.covid-19 a {
 		color: #343a40;
@@ -42,7 +44,7 @@
 	}
 </style>
 <section class="covid-19">
-	<span><b>COVID 19 UPDATE</b> Starting Monday June 8th we will be resuming classes outside. All health and safety measures will be taken. See timetable below for outdoor sessions. For updates keep an eye on our <a href="https://www.instagram.com/bodynamicsfitness" target="_blank">Instagram</a></span>
+	<span><b>COVID 19 UPDATE</b> Business back to normal! Keep an eye on our <a href="https://www.instagram.com/bodynamicsfitness" target="_blank">Instagram</a> for any timetable changes</span>
 </section>
 <header>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
