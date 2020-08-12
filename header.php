@@ -93,7 +93,7 @@
               <a  class="nav-link" id="timetableNav">Timetable</a>
             </li>
             <li class="nav-item">
-              <a  class="nav-link" id="aboutNav">About Us</a>
+              <a  class="nav-link" id="aboutNav">Contact Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="galleryNav" href="/gallery">Gallery</a>

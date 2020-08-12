@@ -28,9 +28,9 @@ h1 {
   color: $white!important; //Override bootstrap color inherit
   font-size: 32px;
   border-radius: 18px;
-  background-color: rgba(0,0, 0, 0.4);
   padding: 0.6em;
   margin-top: 1em;
+  text-shadow: 2px 2px rgba(0,0, 0, 0.4);
 }
 .membership-option {
 	padding: 2em;
@@ -38,7 +38,7 @@ h1 {
   //border-style: dotted;
   background-color: $dark-grey;
   color: $white;
-  height: 100%;
+  min-height: 100%;
 
   &:hover {
     background-color: $green;
@@ -124,7 +124,7 @@ h1 {
 }
 
 //So the scroll has a bit of padding
-#memberships, #team, #timetable, #about, #blog {
+#memberships, #team, #timetable, #blog {
   width: 100%;
   height: 60px;
 }
@@ -201,6 +201,10 @@ h1 {
 
     span {
       color: $green;
+    }
+
+    h3 {
+      padding-top: 1em;
     }
 
     h4 {
@@ -802,7 +806,7 @@ footer {
     }
   }
 
-  .timetable {
+  .timetable {    
     .timetable-mobile {
       display: block;
 
@@ -1016,7 +1020,7 @@ footer {
  /* ----------- Laptop & large tablets ----------- */
 
 @media  (min-width: 1024px) {
-    #memberships, #team, #timetable, #about, #blog {
+    #memberships, #team, #timetable, #blog {
       height: 82px;
   }
 

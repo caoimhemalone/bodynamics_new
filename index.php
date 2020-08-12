@@ -4,48 +4,11 @@
 	h1 {
 		font-size: 32px;
 		border-radius: 18px;
-		background-color: rgba(0,0, 0, 0.4);
 		padding: 0.6em;
 		margin-top: 10%;
 	}
-
-	.covid-19 {
-		background-color: yellow;
-		font-size: 18px;
-		display: flex;
-		margin-top: 6%;
-	}
-
-	@media only screen and (max-width: 767px) {
-		.covid-19 {
-			margin-top: 8%;
-		}
-	}
-
-	.covid-19 span {
-		display: block;
-		width: 100%;
-		padding: 8%;
-		align-self: center;
-		text-align: center;
-	}
-
-
-	.covid-19 a {
-		color: #343a40;
-		font-size: 20px;
-		background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
-		-webkit-background-clip: text; 
-		-webkit-text-fill-color: transparent; 
-	}
-
-	.carousel {
-		padding-top: 0;
-	}
 </style>
-<section class="covid-19">
-	<span><b>COVID 19 UPDATE</b> Business back to normal! Keep an eye on our <a href="https://www.instagram.com/bodynamicsfitness" target="_blank">Instagram</a> for any timetable changes</span>
-</section>
+
 <header>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   	<h1>Bodynamics - Your Body, Your Life, Your Gym </h1>
@@ -108,14 +71,21 @@
 								<p><span class="membership-heading">Membership 1 </span>
 
 								</br>
-								<img data-aos="fade-up-right" class="image-slide" src="images/icons/gym-white.png">
-								 </br> Unlimited Month Classes</p>
-								<p class="membership-price"> €65 </p>
+								<img data-aos="fade-up-right" class="image-slide" src="images/icons/grab.png">
+								 </br> Early Bird Membership</p>
+								<p class="membership-price"> €60 </p>
 								<p class="line-break">- - - - - - - - - - - - - - - - - - - -  </p>
-								<p><span class="membership-heading">Membership 2</span>
+								<p><span class="membership-heading">Membership 2 </span>
+
+								</br>
+								<img data-aos="fade-up-right" class="image-slide" src="images/icons/gym-white.png">
+								 </br> Unlimited Membership</p>
+								<p class="membership-price"> €70 </p>
+								<p class="line-break">- - - - - - - - - - - - - - - - - - - -  </p>
+								<p><span class="membership-heading">Membership 3</span>
 								<img data-aos="fade-up-left" src="images/icons/gym-woman-white.png">
 								</br> 3 Month Unlimited Classes</p>
-								<p class="membership-price"> €170 </p>
+								<p class="membership-price"> €185 </p>
 
 							</div>
 						</div>
@@ -123,13 +93,13 @@
 							<div class="membership-option  slowReveal">
 								<h2>Small Group Personal Training </h2>
 								<p><span class="membership-heading">
-									<img data-aos="fade-up-left" class="image-slide" src="images/icons/bench.png">
-								 </br>Membership 1</span> </br> 8 Sessions(2 per week)</p>
-								<p class="membership-price"> €100 </p>
+								 Membership 1</br></span>
+								 <img data-aos="fade-up-left" class="image-slide" src="images/icons/bench.png"> </br> 2 Sessions a week</p>
+								<p class="membership-price"> €110 p/m </p>
 								<p class="line-break">- - - - - - - - - - - - - - - - - - - -  </p>
 								<p><span class="membership-heading">Membership 2 </span> </br> <img data-aos="fade-up-right" src="images/icons/gym-2.png">
-								</br>12 Sessions(3 per week)</p>
-								<p class="membership-price"> €140 </p>
+								</br>3 Sessions per week</p>
+								<p class="membership-price"> €150 p/m </p>
 
 								
 							</div>
@@ -139,11 +109,11 @@
 								<h2>1 on 1 Personal Training </h2>
 								<p><span class="membership-heading"><img data-aos="fade-up-left" src="images/icons/kettlebell.png">
 								</br>10 Sessions</span></p>
-								<p class="membership-price"> €350 </p>
+								<p class="membership-price"> €400 </p>
 								<p class="line-break">- - - - - - - - - - - - - - - - - - - -  </p>
 								<p><span class="membership-heading"><img data-aos="fade-up-right" src="images/icons/boxing.png">
 								</br>20 Sessions </span></p>
-								<p class="membership-price"> €650 </p>
+								<p class="membership-price"> €700 </p>
 								
 								
 							</div>
@@ -158,6 +128,19 @@
 			</div>
 		
 			
+		</div>
+	</div>
+	<div class="container">
+		<div class="about">
+			<h3 class="reveal">About Us</h3>
+			<div class="about-info">
+			
+				<p>Bodynamics is a high-spec community oriented gym, based on Dublin's Northside. </p>
+
+				<p>At Bodynamics, our focus is on each individual client and tailoring eash session and plan to suit them.</p>
+
+				<p>We offer a wide range og packages from 'Bootcamp' classes, small group personal training to 1on1 and 2on1 sessions.</p>
+			</div>
 		</div>
 	</div>
 <div class="container">
@@ -209,361 +192,8 @@
 </div>
 </div> 
 
-<!-- Temporary Covid 19 Timetable -->
-<div id="timetable"></div>
-	<div class="timetable">
-		<div class="container">
-		<h3 class="reveal">Timetable</h3>
-
-		<div class="timetable-desktop">
-			<table class="class-table">
-				<tr>
-					<th>
-						Monday
-					</th>
-					<th>
-						Tuesday
-					</th>
-					<th>
-						Wednesday
-					</th>
-					<th>
-						Thursday
-					</th>
-					<th>
-						Friday
-					</th>
-					<th>
-						Saturday
-					</th>
-					<th>
-						Sunday
-					</th>
-				</tr>
-
-				<tr id="6-7am">
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>6am</span>
-					</td>
-					<td>
-						
-
-					</td>
-					<td>
-						<h4>Spin & Bells</h4>
-						<span>6am</span>
-
-					</td>
-					<td>
-					
-					</td>
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>6am</span>
-
-					</td>
-					<td>
-						
-
-					</td>
-					<td>
-						
-
-					</td>
-				</tr>
-
-
-				<tr id="9:30-10:30am">
-					<td>
-						
-					</td>
-					<td>
-						<h4>Spin & Bells</h4>
-						<span>9:30am</span>
-					</td>
-					<td>
-					
-					</td>
-					<td>
-						<h4>Endure</h4>
-						<span>9:30am</span>
-					</td>
-					<td>
-						<h4>RT24</h4>
-						<span>9:30am</span>
-					</td>
-					<td>
-						<h4>Strength</h4>
-						<span>9:30am</span>
-					</td>
-					<td>
-						
-						
-					</td>
-				</tr>
-
-
-				<tr id="5:30-6:30pm">
-
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						<h4>Endure</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						<h4>RT24</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						
-						
-					</td>
-					<td>
-						
-						
-						
-					</td>
-				</tr>
-
-
-				<tr id="6-7pm">
-					<td>
-						<h4>Spin & Bells</h4>
-						<span>7pm</span>
-					</td>
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>7pm</span>
-						
-					</td>
-					<td>
-						<h4>Boxing</h4>
-						<span>7pm</span>
-					</td>
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>7pm</span>
-						
-					</td>
-					<td>
-						
-					</td>
-					<td>
-						
-					</td>
-					<td>
-						
-					</td>
-				</tr>		
-			</table>
-		</div>
-	</div>
-
-		<div class="timetable-mobile">
-			<table class="class-table">
-				<tr>
-					<!-- <th> -->
-				
-					<!-- </th> -->
-					<!-- <th>
-						<a>Tuesday</a>
-					</th>
-					<th>
-						<a>Wednesday</a>
-					</th>
-					<th>
-						<a>Thursday</a>
-					</th>
-					<th>
-						<a>Friday</a>
-					</th>
-					<th>
-						<a>Saturday</a>
-					</th>
-					<th>
-						<a>Sunday</a>
-					</th> -->
-				</tr>
-
-				<tr id="6-7am">
-					<td class="active">
-						<h4>Strength & Distancing</h4>
-						<span>6am</span>
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>6am</span>
-					</td>
-					<td>
-						<h4>Spin & Bells</h4>
-						<span>6am</span>
-
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>6am</span>
-					</td>
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>6am</span>
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>6am</span>
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>6am</span>
-					</td>
-				</tr>
-
-
-				<tr id="9:30-10:30am">
-					<td class="active">
-						<h4>No Class</h4>
-						<span>9:30am</span>
-					</td>
-					<td>
-						<h4>Spin & Bells</h4>
-						<span>9:30am</span>
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>9:30am</span>
-					</td>
-					<td>
-						<h4>Endure</h4>
-						<span>9:30am</span>
-					</td>
-					<td>
-						<h4>RT24</h4>
-						<span>9:30am</span>
-					</td>
-					<td>
-						<h4>Strength</h4>
-						<span>9:30am</span>
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>9:30am</span>
-					</td>
-				</tr>
-
-
-				<tr id="5:30-6:30pm">
-					<td class="active">
-						<h4>Strength & Distancing</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						<h4>Endure</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						<h4>RT24</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>6pm</span>
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>6pm</span>
-					</td>
-				</tr>
-
-
-				<tr id="6-7pm">
-					<td class="active">
-						<h4>Spin & Bells</h4>
-						<span>7pm</span>
-					</td>
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>7pm</span>
-						
-					</td>
-					<td>
-						<h4>Boxing</h4>
-						<span>7pm</span>
-					</td>
-					<td>
-						<h4>Strength & Distancing</h4>
-						<span>7pm</span>
-						
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>7pm</span>
-						
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>7pm</span>					
-					</td>
-					<td>
-						<h4>No Class</h4>
-						<span>7pm</span>
-					</td>
-				</tr>
-			</table>
-
-			<div class="navbar timetable-bottom-nav">
-						
-					<ul>
-						<li class="active">
-							<a id="monday" alt="Monday">Mon</a>
-						</li>
-						<li>
-							<a id="tuesday" alt="Tuesday">Tues</a>
-						</li>
-						<li>
-							<a id="wednesday" alt="Wednesday">Wed</a>
-						</li>
-						<li>
-							<a id="thursday" alt="Thursday">Thurs</a>
-						</li>
-						<li>
-							<a id="friday" alt="Friday">Fri</a>
-						</li>
-						<li>
-							<a id="saturday" alt="Saturday">Sat</a>
-						</li>
-						<li>
-							<a id="sunday" alt="Sunday">Sun</a>
-						</li> 
-					</ul>
-					<hr>
-				</div>
-			
-		</div>
-		</div>
-
-	</div>
-<!-- End of temp timetable -->
 	
-	<!-- <div id="timetable"></div>
+	<div id="timetable"></div>
 	<div class="timetable">
 		<div class="container">
 		<h3 class="reveal">Timetable</h3>
@@ -799,10 +429,10 @@
 		<div class="timetable-mobile">
 			<table class="class-table">
 				<tr>
-					<!-- <th> -->
+					<th>
 				
-					<!-- </th> -->
-					<!-- <th>
+					</th>
+					<th>
 						<a>Tuesday</a>
 					</th>
 					<th>
@@ -819,8 +449,8 @@
 					</th>
 					<th>
 						<a>Sunday</a>
-					</th> -->
-				<!-- </tr>
+					</th> 
+				</tr> 
 
 				<tr id="6-7am">
 					<td class="active">
@@ -1076,7 +706,7 @@
 		</div>
 		</div>
 
-	</div> -->
+	</div>
 	
 
 	<div class=" white edge--top">
@@ -1166,7 +796,7 @@
 		</div>
 		<div class="about" style="padding-bottom: 2em;">
 			<div class="container">
-				<h3 class="reveal">About Us</h3>
+				<!-- <h3 class="reveal">About Us</h3>
 				<div class="about-info">
 				
 					<p>Bodynamics is a high-spec community oriented gym, based on Dublin's Northside. </p>
@@ -1174,7 +804,7 @@
 					<p>At Bodynamics, our focus is on each individual client and tailoring eash session and plan to suit them.</p>
 
 					<p>We offer a wide range og packages from 'Bootcamp' classes, small group personal training to 1on1 and 2on1 sessions.</p>
-				</div>
+				</div> -->
 				<div class="contact-info">
 					<h5 class="reveal">Contact Information</h5>
 					<div class="row">
